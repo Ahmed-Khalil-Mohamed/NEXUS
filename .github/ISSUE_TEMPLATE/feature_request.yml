@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest a concrete improvement to a NEXUS workflow.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired workflow or outcome
+      description: "Describe a specific example without private project data."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

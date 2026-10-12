@@ -7,10 +7,9 @@
   <p>Windows x64 · English & Arabic · Light & dark · Proprietary software</p>
 </div>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/workspace-dark.png">
-  <img src="assets/workspace-light.png" alt="NEXUS English workspace with chat, project tools, and provider selection">
-</picture>
+[![NEXUS — Your AI tools. One workspace. Download for Windows.](assets/nexus-launch.png)](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1)
+
+**[Join the launch discussion](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions)** — explore the preview, share feedback, and help shape the next version.
 
 NEXUS is a Windows desktop application that brings supported AI tools, project context, conversations, and a specialist library together. Start a direct conversation or use **Mix** to coordinate a team through NEXUS Manager. Track assignments, reported tool activity, time, usage, and generated files in one place.
 
@@ -87,8 +86,43 @@ Version 0.5.1 refines chat spacing, combines project/attachment controls in the 
 
 [Report issues](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/issues) with the NEXUS version, Windows version, selected provider, and reproduction steps. Remove tokens, private prompts, personal paths, and project content before posting.
 
+## Build from source
+
+**For maintainers with access to the private source repository only.** The public repository does not contain application source; downloading an EXE is the normal installation route. GitHub authentication with an authorized account is required for the clone below.
+
+Use Windows x64, Git, npm, and a supported Node.js release **22.13.0 or newer**.
+
+```powershell
+git clone https://github.com/Ahmed-Khalil-Mohamed/NEXUS-source.git
+cd NEXUS-source
+npm ci
+npm test
+npm run build
+npm run desktop
+```
+
+Create the portable app and installer:
+
+```powershell
+npm run desktop:build
+```
+
+Version 0.5.1 outputs are placed in `release-v051/`. `npm run dev` starts the frontend development preview with the local backend; `npm start` starts the backend and built interface. Use `npm run desktop` to launch the Windows application. Browser previews do not provide native Electron dialogs or IPC features.
+
+Built with React, Vite, Electron, and a local Node.js/SQLite backend. The renderer uses context isolation and sandboxing. See the [maintainer build guide](docs/BUILD.md) for the layout and checks. This section does not grant access to, or an open-source license for, the private source.
+
+## Contribute & share
+
+Bug reports, reproducible compatibility reports, suggestions, and documentation corrections are welcome. Use the [issue templates](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/issues/new/choose) and remove secrets and personal information from reports.
+
+For usage questions or feedback, join [Discussions](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions). Application-code changes are handled in the private repository by authorized maintainers; public pull requests can improve these docs.
+
+Want to introduce NEXUS? The [launch kit](docs/LAUNCH-KIT.md) contains English copy, the campaign image, and verified download links. Share it where it is relevant; if the project helps you, a GitHub star makes it easier to find again. See [CONTRIBUTING](CONTRIBUTING.md).
+
 ## License & credits
 
-NEXUS is **proprietary, closed-source software**. You may download, install, and use its official binaries under [NOTICE.txt](NOTICE.txt). This public repository contains documentation and images only. Development source is maintained separately in a private repository.
+NEXUS is **proprietary, closed-source software**. You may download, install, and use its official binaries under [NOTICE.txt](NOTICE.txt). This public repository contains documentation, promotional assets, and community templates. Development source is maintained separately in a private repository.
 
 Third-party libraries and fonts retain their licenses; see [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt) and the Electron/Chromium notices included with the application. Provider names belong to their owners. NEXUS is independent and is not endorsed by the referenced providers.
+
+The launch banner is conceptual AI-generated campaign artwork. The light/dark screenshots show the actual English interface. [Image provenance](assets/README.md).
