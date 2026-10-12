@@ -1,0 +1,6 @@
+NEXUS 0.5.1
+Copyright (c) 2026 NEXUS project owner. All rights reserved.
+
+Permission is granted to download, install, and use the official NEXUS binary distribution. No open-source license or permission to redistribute the application's source is granted.
+
+Third-party components remain subject to their respective licenses. This notice does not restrict rights granted by those licenses.

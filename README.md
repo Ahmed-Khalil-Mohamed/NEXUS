@@ -1,46 +1,94 @@
-# NEXUS for Windows
+<div align="center">
+  <img src="assets/nexus-icon.png" width="76" height="76" alt="NEXUS icon">
+  <h1>NEXUS</h1>
+  <h3>Your AI tools. One organized workspace.</h3>
+  <p>Plan, build, and review with your AI providers and 300 specialist roles.</p>
+  <p><strong><a href="https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1">Download for Windows</a></strong> · <a href="docs/USER-GUIDE.md">User guide</a> · <a href="docs/FAQ.md">FAQ</a> · <a href="https://github.com/Ahmed-Khalil-Mohamed/NEXUS/issues">Report an issue</a></p>
+  <p>Windows x64 · English & Arabic · Light & dark · Proprietary software</p>
+</div>
 
-A desktop workspace for your AI tools, projects, and conversations.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/workspace-dark.png">
+  <img src="assets/workspace-light.png" alt="NEXUS English workspace with chat, project tools, and provider selection">
+</picture>
 
-## Download / تحميل البرنامج
+NEXUS is a Windows desktop application that brings supported AI tools, project context, conversations, and a specialist library together. Start a direct conversation or use **Mix** to coordinate a team through NEXUS Manager. Track assignments, reported tool activity, time, usage, and generated files in one place.
 
-**[Open the download page — افتح صفحة التحميل](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases)**
+## Download & start
 
-Choose a Windows x64 executable from the release assets:
+**[Download the Windows installer](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.5.1/NEXUS-Setup-0.5.1.exe)**
 
-- **NEXUS-Setup-0.5.1.exe** — installer / نسخة التثبيت.
-- **NEXUS-0.5.1-Windows.exe** — portable edition / نسخة محمولة.
+| File | Choose it when… |
+| --- | --- |
+| [NEXUS-Setup-0.5.1.exe](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.5.1/NEXUS-Setup-0.5.1.exe) | You want guided installation and Windows shortcuts. Recommended for regular use. |
+| [NEXUS-0.5.1-Windows.exe](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.5.1/NEXUS-0.5.1-Windows.exe) | You want to run without installing. Settings still live in your Windows user profile. |
+| [SHA256SUMS.txt](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.5.1/SHA256SUMS.txt) | You want to verify the downloaded files. |
 
-Node.js is included. A supported AI provider, account, or local model service is required; provider charges and terms apply.
+1. Download and open an **EXE** from [Releases](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases).
+2. Wait for the startup banner, displayed for about 30 seconds.
+3. Enter your name once, discover your tools, and select supported providers.
+4. Start a chat, choose a project folder, or assemble a Mix team.
+5. Use Settings for language, theme, memory, and provider preferences.
 
-## Features
+Node.js is bundled. A supported AI provider account or local model service is required. Provider subscriptions, usage limits, and charges still apply.
 
-- English and Arabic, with light and dark themes.
-- Saved profile, settings, conversations, and projects.
-- Discovery of AI tools installed on Windows and selectable supported integrations.
-- 300 specialist roles coordinated by NEXUS Manager in Mix.
-- Project folder context, attachments, Markdown chat, and run reports.
+This Windows x64 preview has been tested on the development Windows machine; compatibility with every configuration is not certified. No ARM64, macOS, or Linux package is provided. The executables are unsigned: verify the source and checksum without disabling Windows security.
 
-The 300 roles work through the selected providers; they are not 300 bundled AI models. Not every detected application supports direct integration. Audio transcription needs a configured local service. Video import analyzes sampled frames. Project reading is bounded, and generated changes require Apply.
+GitHub automatically adds **Source code (zip / tar.gz)** downloads. Here they contain this repository's documentation and images, **not the application's development source**. Choose an **EXE** to run NEXUS.
 
-## First launch
+## What can you do with NEXUS?
 
-The startup banner appears for about 30 seconds. Enter your name once, scan for tools, and choose your providers. Change the language and theme in Settings.
+| What you want to do | What NEXUS provides |
+| --- | --- |
+| Talk to your AI tools | Supported provider connections, Markdown responses, and saved conversations. |
+| Coordinate a project | A fixed Manager plans assignments and dependencies, specialists contribute, and review/repair stages follow. |
+| Choose expertise | 300 editable roles across planning, engineering, design, marketing, quality, and other disciplines. |
+| Work on existing files | Project Lab reads a selected folder within documented limits and sends context with your request. |
+| Understand the result | Reported tool activity, duration, token usage when available, and generated-file summaries. |
+| Apply changes | An explicit Apply action, original-file conflict checks, and local backups. |
+| Add context | Text/code, text-based PDF, DOCX, supported images, sampled video frames, and locally transcribed audio. |
+| Personalize your workspace | English or Arabic, light or dark, and saved onboarding/preferences. |
 
-The executables are currently unsigned. Verify the download source and compare the SHA-256 hash against SHA256SUMS.txt.
+## Your providers, connected
 
-## Your data
+Built-in execution adapters cover **Codex CLI, Claude Code CLI, Ollama, and LM Studio**. Authenticate through each CLI's own tools or start your local model service, then run a connection check in Settings.
 
-Settings and conversations are stored locally under `%APPDATA%/NEXUS/workspace`. When you send a request, relevant messages, selected project context, and supported attachments are sent to the AI provider you chose. Its data policies apply.
+Discovery also finds other installed tools and candidate agent files. **Detected does not mean connected:** execution requires a compatible CLI or API. Supported custom local connectors can be configured. No model weights or paid AI subscriptions are included.
 
-## Proprietary distribution
+## How Mix works
 
-Copyright (c) 2026 NEXUS project owner. All rights reserved.
+**Your brief → Manager plan → Specialist assignments → Integration → Review → Repair when needed → Final report**
 
-Permission is granted to download, install, and use the official NEXUS binary distribution. No open-source license or permission to redistribute the application source is granted. Third-party components retain their own licenses; see the notices distributed with the release and application.
+Each specialist receives a task, deliverables, acceptance criteria, and dependencies. The 300 roles are instruction definitions working through selected providers, not 300 bundled AI models. The Manager remains part of the workflow.
 
-This repository contains download documentation only. The development source is not published here. GitHub automatically labels repository ZIP/TAR downloads as "Source code"; those archives contain only this repository documentation, not the application source. Download an **.exe** file to use NEXUS.
+All 300 roles can participate, in scheduled batches with 1–4 concurrent calls depending on settings and available memory. Bigger teams consume more requests and take longer. Failed specialists stop the run; remaining issues after the repair pass are reported for follow-up. [Read the workflow guide](docs/USER-GUIDE.md#mix-and-the-specialist-library).
 
-## بالعربي
+## See the workspace
 
-حمّل ملف EXE من قسم Releases وشغّله كبرنامج Windows. البرنامج يدعم العربية والإنجليزية والثيم الفاتح والداكن، ومكتبة 300 دور متخصص تعمل عبر أدوات AI التي تختارها. هذا مستودع لتوزيع البرنامج المغلق المصدر، وليس مستودع كود المشروع.
+### A calm starting point
+
+![NEXUS English workspace in light mode](assets/workspace-light.png)
+
+### A darker workspace, with the same layout
+
+![NEXUS English workspace in dark mode](assets/workspace-dark.png)
+
+Unaltered 0.5.1 interface captures from an isolated demonstration profile. Alex is an example name. These show the shared desktop interface through its local preview; no AI response or performance result is fabricated. [Image details](assets/README.md).
+
+## Privacy & control
+
+Settings, chats, and project records are stored locally. Sending a request shares relevant messages, selected project content, and supported attachments with your chosen provider. Its data policy applies. Local storage is not encrypted by NEXUS.
+
+Discovery enumerates paths; it does not read all personal documents or bypass Windows permissions. Project reads are bounded. Generated changes require Apply. NEXUS does not automatically run generated code or install its dependencies. [Privacy details](docs/PRIVACY.md).
+
+## Release notes & support
+
+Version 0.5.1 refines chat spacing, combines project/attachment controls in the composer, improves light/dark colors, and makes completed-run reports easier to scan. See [CHANGELOG](CHANGELOG.md), the [user guide](docs/USER-GUIDE.md), and [FAQ](docs/FAQ.md).
+
+[Report issues](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/issues) with the NEXUS version, Windows version, selected provider, and reproduction steps. Remove tokens, private prompts, personal paths, and project content before posting.
+
+## License & credits
+
+NEXUS is **proprietary, closed-source software**. You may download, install, and use its official binaries under [NOTICE.txt](NOTICE.txt). This public repository contains documentation and images only. Development source is maintained separately in a private repository.
+
+Third-party libraries and fonts retain their licenses; see [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt) and the Electron/Chromium notices included with the application. Provider names belong to their owners. NEXUS is independent and is not endorsed by the referenced providers.
