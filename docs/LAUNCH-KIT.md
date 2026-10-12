@@ -41,5 +41,6 @@ NEXUS brings your AI tools into one Windows workspace. Direct chat, project cont
 - [Windows downloads](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1)
 - [User guide](USER-GUIDE.md)
 - [Discussions](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions)
+- [Launch announcement](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions/1)
 
 Do not add invented endorsements, popularity statistics, guaranteed results, or claims that the 300 roles are bundled models. Campaign copy does not imply unrestricted access to private source.

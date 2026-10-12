@@ -9,7 +9,7 @@
 
 [![NEXUS — Your AI tools. One workspace. Download for Windows.](assets/nexus-launch.png)](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1)
 
-**[Join the launch discussion](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions)** — explore the preview, share feedback, and help shape the next version.
+**[Join the launch discussion](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions/1)** — explore the preview, share feedback, and help shape the next version.
 
 NEXUS is a Windows desktop application that brings supported AI tools, project context, conversations, and a specialist library together. Start a direct conversation or use **Mix** to coordinate a team through NEXUS Manager. Track assignments, reported tool activity, time, usage, and generated files in one place.
 
