@@ -2,13 +2,19 @@
 
 ## Local storage
 
-NEXUS 0.5.1 stores settings, chats, role edits, attachments, project records, scan progress, generated files, and backups under `%APPDATA%/NEXUS/workspace`. The portable edition uses the same location. Replacing an EXE does not erase the workspace. SQLite and accompanying files are not encrypted by NEXUS.
+NEXUS 0.6.6 stores settings, chats, role edits, attachments, project records, scan progress, generated files, and backups under `%APPDATA%/NEXUS/workspace`. The portable edition uses the same location. Replacing an EXE does not erase the workspace. The conversation database and ordinary workspace files are not encrypted by NEXUS. Saved API keys and MCP bearer credentials use a separate Windows user-scoped DPAPI vault; copying that vault to a different Windows account does not make its credentials portable.
 
 ## AI requests
 
 Sending a request shares relevant history, selected project context, and supported attachments with your chosen provider. Mix sends assignments and handoffs through its providers. Connection checks also invoke a provider. Its terms, retention policies, charges, and network behavior apply.
 
 Local inference does not guarantee that every third-party tool is offline.
+
+## News, catalogs and extensions
+
+News retrieves official feeds and publisher images for the selected companies. Store browsing contacts the relevant skill catalogs, GitHub, the MCP Registry and Hugging Face. Local-model downloads are handled through Ollama and contact the model host. Provider/model catalogs contact the configured service where supported.
+
+MCP tools may send their arguments to the selected server. Review the server and individual tool permissions before enabling them. Folder-scoped Filesystem tools operate on the folder you select; other MCP tools may have their own data handling. Skill installation writes the reviewed skill folder to the selected agent's supported location.
 
 ## Scans and projects
 

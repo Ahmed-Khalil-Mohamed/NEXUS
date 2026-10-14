@@ -1,128 +1,112 @@
 <div align="center">
-  <img src="assets/nexus-icon.png" width="76" height="76" alt="NEXUS icon">
+  <img src="assets/nexus-icon.png" width="72" height="72" alt="NEXUS icon">
   <h1>NEXUS</h1>
-  <h3>Your AI tools. One organized workspace.</h3>
-  <p>Plan, build, and review with your AI providers and 300 specialist roles.</p>
-  <p><strong><a href="https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1">Download for Windows</a></strong> · <a href="docs/USER-GUIDE.md">User guide</a> · <a href="docs/FAQ.md">FAQ</a> · <a href="https://github.com/Ahmed-Khalil-Mohamed/NEXUS/issues">Report an issue</a></p>
+  <h3>Make room for your next idea.</h3>
+  <p>Your AI tools, conversations and specialist team in one Windows workspace.</p>
+  <p><strong><a href="https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.6.6/NEXUS-Setup-0.6.6.exe">Download for Windows</a></strong> · <a href="https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.6.6">What's new in 0.6.6</a> · <a href="docs/USER-GUIDE.md">User guide</a></p>
   <p>Windows x64 · English & Arabic · Light & dark · Proprietary software</p>
 </div>
 
-[![NEXUS — Your AI tools. One workspace. Download for Windows.](assets/nexus-launch.png)](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1)
+[![NEXUS 0.6.6 — a new home for your AI workflow](assets/v0.6.6/home-light.jpg)](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.6.6)
 
-**[Join the launch discussion](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions/1)** — explore the preview, share feedback, and help shape the next version.
+## New in 0.6.6
 
-NEXUS is a Windows desktop application that brings supported AI tools, project context, conversations, and a specialist library together. Start a direct conversation or use **Mix** to coordinate a team through NEXUS Manager. Track assignments, reported tool activity, time, usage, and generated files in one place.
+A new Home with a real conversation launcher, clearer model comparison cards, editorial AI news and a calmer visual system. This release also includes the Store, local-model downloads, richer connections and Mix inspection added since 0.5.1.
+
+| Start with an idea | Choose your tools | Understand the work |
+| --- | --- | --- |
+| Draft from Home and continue in Chat. Resume recent conversations. | Select supported agents, local models or API connections. Extend them with skills and MCP tools. | Inspect Mix assignments, recorded instructions, tool events and reported usage. |
+
+**[Read the full update and upgrade guide](docs/RELEASE-0.6.6.md)**
 
 ## Download & start
 
-**[Download the Windows installer](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.5.1/NEXUS-Setup-0.5.1.exe)**
-
-| File | Choose it when… |
+| Download | Best for |
 | --- | --- |
-| [NEXUS-Setup-0.5.1.exe](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.5.1/NEXUS-Setup-0.5.1.exe) | You want guided installation and Windows shortcuts. Recommended for regular use. |
-| [NEXUS-0.5.1-Windows.exe](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.5.1/NEXUS-0.5.1-Windows.exe) | You want to run without installing. Settings still live in your Windows user profile. |
-| [SHA256SUMS.txt](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.5.1/SHA256SUMS.txt) | You want to verify the downloaded files. |
+| **[NEXUS-Setup-0.6.6.exe](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.6.6/NEXUS-Setup-0.6.6.exe)** | Guided installation and Windows shortcuts. |
+| [NEXUS-0.6.6-Windows.exe](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.6.6/NEXUS-0.6.6-Windows.exe) | Running without installation; settings still live in your Windows profile. |
+| [SHA256SUMS.txt](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.6.6/SHA256SUMS.txt) | Verifying both EXE downloads. |
 
-1. Download and open an **EXE** from [Releases](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases).
-2. Wait for the startup banner, displayed for about 30 seconds.
-3. Enter your name once, discover your tools, and select supported providers.
-4. Start a chat, choose a project folder, or assemble a Mix team.
-5. Use Settings for language, theme, memory, and provider preferences.
+1. Close any older NEXUS version, then open the installer or portable EXE.
+2. Wait for the startup banner. Enter your name once, choose AI news interests, discover tools and select supported connections.
+3. Start a conversation, select a project folder, or assemble a Mix team.
+4. Use Store for extensions and Settings for connections, language, appearance and preferences.
 
-Node.js is bundled. A supported AI provider account or local model service is required. Provider subscriptions, usage limits, and charges still apply.
+**Updating?** Back up `%APPDATA%/NEXUS/workspace` with NEXUS closed. See the [upgrade steps](docs/RELEASE-0.6.6.md#updating-from-an-earlier-version). Opening an older EXE will still show the older interface.
 
-This Windows x64 preview has been tested on the development Windows machine; compatibility with every configuration is not certified. No ARM64, macOS, or Linux package is provided. The executables are unsigned: verify the source and checksum without disabling Windows security.
+Node.js is bundled. A supported provider account or local model service is required; subscriptions, quotas and usage charges still apply. Current Windows x64 downloads are unsigned. Verify the download source and checksum without disabling Windows security. No ARM64, macOS or Linux package is provided.
 
-GitHub automatically adds **Source code (zip / tar.gz)** downloads. Here they contain this repository's documentation and images, **not the application's development source**. Choose an **EXE** to run NEXUS.
+GitHub automatically adds **Source code (zip / tar.gz)** archives. They contain this repository's documentation and images, **not NEXUS development source**. Download an **EXE** to use the program.
 
-## What can you do with NEXUS?
+## A workspace that starts with your idea
 
-| What you want to do | What NEXUS provides |
+Home brings a draft composer, recent conversations and workspace shortcuts together. Continue to Chat to review the selected connection and model before sending. Your interests shape the official AI announcements shown below.
+
+![NEXUS Home in dark mode](assets/v0.6.6/home-dark.jpg)
+
+## Compare models without the spreadsheet
+
+Pick up to three models and adjust your estimated input/output token usage. Cards show snapshot prices, estimated API cost and official source links. The directory includes 26 providers' pricing pages.
+
+![NEXUS model comparison](assets/v0.6.6/model-comparison.jpg)
+
+Estimates use a dated snapshot, not live billing quotes. Bars compare cost, not quality. Check provider pricing for current rates, caching, tools, taxes and long-context charges. Chat subscriptions are separate.
+
+## Your agents, local models and APIs
+
+Start a direct conversation with supported CLI agents, local services or compatible API connections. Agent/model selection lives in the chat toolbar; the sidebar keeps your conversations together. Built-in execution adapters include Codex CLI, Claude Code CLI, Ollama and LM Studio, alongside compatible custom connectors.
+
+![NEXUS chat and agent selector](assets/v0.6.6/chat-light.jpg)
+
+Detection does not guarantee execution: an app needs a supported CLI/API and any required authentication. Model catalogs are supplied by the selected connection where available; cached/default choices are labeled. No subscriptions or model weights are bundled.
+
+## Store: give your workspace more capability
+
+| Section | What it does |
 | --- | --- |
-| Talk to your AI tools | Supported provider connections, Markdown responses, and saved conversations. |
-| Coordinate a project | A fixed Manager plans assignments and dependencies, specialists contribute, and review/repair stages follow. |
-| Choose expertise | 300 editable roles across planning, engineering, design, marketing, quality, and other disciplines. |
-| Work on existing files | Project Lab reads a selected folder within documented limits and sends context with your request. |
-| Understand the result | Reported tool activity, duration, token usage when available, and generated-file summaries. |
-| Apply changes | An explicit Apply action, original-file conflict checks, and local backups. |
-| Add context | Text/code, text-based PDF, DOCX, supported images, sampled video frames, and locally transcribed audio. |
-| Personalize your workspace | English or Arabic, light or dark, and saved onboarding/preferences. |
+| **Workspace tools** | Project Lab, Mix, files/media, activity reports and the specialist library. |
+| **Discover skills** | Browse supported catalogs, review a skill, choose a compatible detected agent and install its folder. |
+| **MCPs** | Add ready integrations or search supported entries from the official MCP Registry. Discover tools and choose permissions. |
+| **AI Local** | Browse Hugging Face GGUF models and download supported public single-file models through Ollama, then use installed models in Chat or Mix. |
 
-## Your providers, connected
+![NEXUS MCP Store](assets/v0.6.6/mcp-store.jpg)
 
-Built-in execution adapters cover **Codex CLI, Claude Code CLI, Ollama, and LM Studio**. Authenticate through each CLI's own tools or start your local model service, then run a connection check in Settings.
+Ready MCP connections include Microsoft Learn, Cloudflare Docs, Context7 and Hugging Face, plus bundled Knowledge Memory and folder-scoped Project Filesystem. Adding a server does not automatically grant tool permissions. MCP OAuth is not supported in this version.
 
-Discovery also finds other installed tools and candidate agent files. **Detected does not mean connected:** execution requires a compatible CLI or API. Supported custom local connectors can be configured. No model weights or paid AI subscriptions are included.
+Ollama must be installed for the local-model download flow. Model licenses, hardware requirements, architecture and tool support vary. Gated/private repositories and split GGUF downloads are excluded. See the [0.6.6 guide](docs/RELEASE-0.6.6.md) for boundaries.
 
-## How Mix works
+## Mix: a team you can inspect
 
 **Your brief → Manager plan → Specialist assignments → Integration → Review → Repair when needed → Final report**
 
-Each specialist receives a task, deliverables, acceptance criteria, and dependencies. The 300 roles are instruction definitions working through selected providers, not 300 bundled AI models. The Manager remains part of the workflow.
+NEXUS Manager coordinates a library of 300 editable roles spanning engineering, design, planning, marketing, security and more. Select supported agents, Local AI and API connections for the execution team. Inspect stages to see assigned tasks, recorded instructions, provider/model metadata, reported activity and outputs.
 
-All 300 roles can participate, in scheduled batches with 1–4 concurrent calls depending on settings and available memory. Bigger teams consume more requests and take longer. Failed specialists stop the run; remaining issues after the repair pass are reported for follow-up. [Read the workflow guide](docs/USER-GUIDE.md#mix-and-the-specialist-library).
+The 300 roles are instruction definitions, **not 300 bundled models**. Teams run in scheduled batches with up to four concurrent calls depending on configuration and memory. Larger teams require more requests and time. Recorded instructions are the prompts sent to providers, not private model reasoning.
 
-## See the workspace
-
-### A calm starting point
-
-![NEXUS English workspace in light mode](assets/workspace-light.png)
-
-### A darker workspace, with the same layout
-
-![NEXUS English workspace in dark mode](assets/workspace-dark.png)
-
-Unaltered 0.5.1 interface captures from an isolated demonstration profile. Alex is an example name. These show the shared desktop interface through its local preview; no AI response or performance result is fabricated. [Image details](assets/README.md).
+Project Lab reads a selected folder within limits. Attach documents, code and supported images; video supplies sampled frames, and voice requires a configured transcription service. Review generated file changes before Apply. Conflict checks and local backups help protect existing work.
 
 ## Privacy & control
 
-Settings, chats, and project records are stored locally. Sending a request shares relevant messages, selected project content, and supported attachments with your chosen provider. Its data policy applies. Local storage is not encrypted by NEXUS.
+Settings, conversations and project records are stored locally. Sending a request shares relevant messages, selected project content and supported attachments with your chosen provider; its policies apply. Discovery enumerates paths and respects Windows permissions. It does not read every personal document. NEXUS does not automatically execute generated code or install project dependencies. [Privacy details](docs/PRIVACY.md).
 
-Discovery enumerates paths; it does not read all personal documents or bypass Windows permissions. Project reads are bounded. Generated changes require Apply. NEXUS does not automatically run generated code or install its dependencies. [Privacy details](docs/PRIVACY.md).
+## Verification & support
 
-## Release notes & support
+The 0.6.6 release passed **73 automated tests**, the production build and Windows unpacked/portable launch checks. UI verification covered the composer, comparison calculator, themes, Arabic RTL and narrow layouts. Live third-party inference was not retested for this visual release; test adapters do not establish real-provider quality.
 
-Version 0.5.1 refines chat spacing, combines project/attachment controls in the composer, improves light/dark colors, and makes completed-run reports easier to scan. See [CHANGELOG](CHANGELOG.md), the [user guide](docs/USER-GUIDE.md), and [FAQ](docs/FAQ.md).
-
-[Report issues](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/issues) with the NEXUS version, Windows version, selected provider, and reproduction steps. Remove tokens, private prompts, personal paths, and project content before posting.
+[Report a problem](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/issues/new/choose) with your version, Windows version, provider and reproduction steps. Remove private prompts, keys, personal paths and project content. [FAQ](docs/FAQ.md) · [User guide](docs/USER-GUIDE.md) · [Changelog](CHANGELOG.md).
 
 ## Build from source
 
-**For maintainers with access to the private source repository only.** The public repository does not contain application source; downloading an EXE is the normal installation route. GitHub authentication with an authorized account is required for the clone below.
-
-Use Windows x64, Git, npm, and a supported Node.js release **22.13.0 or newer**.
-
-```powershell
-git clone https://github.com/Ahmed-Khalil-Mohamed/NEXUS-source.git
-cd NEXUS-source
-npm ci
-npm test
-npm run build
-npm run desktop
-```
-
-Create the portable app and installer:
-
-```powershell
-npm run desktop:build
-```
-
-Version 0.5.1 outputs are placed in `release-v051/`. `npm run dev` starts the frontend development preview with the local backend; `npm start` starts the backend and built interface. Use `npm run desktop` to launch the Windows application. Browser previews do not provide native Electron dialogs or IPC features.
-
-Built with React, Vite, Electron, and a local Node.js/SQLite backend. The renderer uses context isolation and sandboxing. See the [maintainer build guide](docs/BUILD.md) for the layout and checks. This section does not grant access to, or an open-source license for, the private source.
+**For authorized maintainers only.** Application source is maintained in a separate private repository. This public repository cannot be built into NEXUS. End users should download an EXE. See the [maintainer build guide](docs/BUILD.md) for requirements, commands and packaging.
 
 ## Contribute & share
 
-Bug reports, reproducible compatibility reports, suggestions, and documentation corrections are welcome. Use the [issue templates](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/issues/new/choose) and remove secrets and personal information from reports.
+Feedback, reproducible bug reports and documentation corrections are welcome. Application-code contributions are handled privately by authorized maintainers. [Contribution guide](CONTRIBUTING.md) · [Discussions](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions).
 
-For usage questions or feedback, join [Discussions](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions). Application-code changes are handled in the private repository by authorized maintainers; public pull requests can improve these docs.
-
-Want to introduce NEXUS? The [launch kit](docs/LAUNCH-KIT.md) contains English copy, the campaign image, and verified download links. Share it where it is relevant; if the project helps you, a GitHub star makes it easier to find again. See [CONTRIBUTING](CONTRIBUTING.md).
+The [release sharing kit](docs/LAUNCH-KIT.md) includes English announcement copy and the actual interface gallery. Share the official download page so people get the current binaries and checksums.
 
 ## License & credits
 
-NEXUS is **proprietary, closed-source software**. You may download, install, and use its official binaries under [NOTICE.txt](NOTICE.txt). This public repository contains documentation, promotional assets, and community templates. Development source is maintained separately in a private repository.
+NEXUS is **proprietary, closed-source software**. Official binaries may be downloaded, installed and used under [NOTICE.txt](NOTICE.txt). Third-party libraries, fonts, models and services retain their own terms; see [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt). Private source hosting does not make installed binaries impossible to inspect.
 
-Third-party libraries and fonts retain their licenses; see [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt) and the Electron/Chromium notices included with the application. Provider names belong to their owners. NEXUS is independent and is not endorsed by the referenced providers.
-
-The launch banner is conceptual AI-generated campaign artwork. The light/dark screenshots show the actual English interface. [Image provenance](assets/README.md).
+Images show the actual 0.6.6 interface with an isolated demonstration profile. Alex and conversation titles are examples; they are not evidence of completed AI work. Provider names and logos belong to their owners; NEXUS is independent and not endorsed by them. [Image provenance and gallery](assets/README.md).

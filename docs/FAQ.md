@@ -2,7 +2,7 @@
 
 ## Which download runs NEXUS?
 
-Choose **NEXUS-Setup-0.5.1.exe** to install or **NEXUS-0.5.1-Windows.exe** for portable use. No source archive, development tools, or separate Node.js installation is needed.
+Choose **NEXUS-Setup-0.6.6.exe** to install or **NEXUS-0.6.6-Windows.exe** for portable use. No source archive, development tools, or separate Node.js installation is needed.
 
 ## Why does GitHub show Source code downloads?
 

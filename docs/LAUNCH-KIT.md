@@ -1,46 +1,29 @@
-# NEXUS launch kit
+# NEXUS 0.6.6 — Release sharing kit
 
-English copy and artwork for introducing the Windows public preview. Share the official download link rather than re-uploading executables to other services.
+## Announcement
 
-## Campaign image
+NEXUS 0.6.6 is here: a new home for your AI workflow.
 
-[Download the launch artwork](../assets/nexus-launch.png)
+Start an idea from the redesigned Home, return to recent conversations, and compare model API costs in clear side-by-side cards. A calmer light/dark palette brings the workspace together.
 
-![NEXUS launch artwork](../assets/nexus-launch.png)
+This update also brings the NEXUS Store: discover compatible agent skills, connect MCP tools, and explore supported Hugging Face models for local use through Ollama. Choose supported agents, Local AI or API connections in Chat, or coordinate specialist roles through NEXUS Manager in Mix.
 
-Conceptual campaign artwork, not an app screenshot. [Actual English screenshots and provenance](../assets/README.md).
+English and Arabic. Windows x64. Installer and portable EXE.
 
-## Full post
+Download and read what's new: https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.6.6
 
-Meet NEXUS for Windows — your AI tools, one workspace.
+NEXUS is proprietary software. A supported provider or local model service is required. Model downloads, provider access, hardware requirements and usage charges vary. The 300 specialists are roles working through your chosen providers, not bundled models. Current downloads are unsigned.
 
-Connect supported providers such as Codex CLI, Claude Code CLI, Ollama, and LM Studio. Start a direct chat, bring in an existing project folder, or use Mix to coordinate specialist roles through NEXUS Manager.
+## Short announcement
 
-The library includes 300 roles for planning, engineering, design, review, marketing, and more. They work through your selected providers in batches. Review reported activity and generated files before applying changes.
+Meet the new NEXUS 0.6.6: a redesigned Home, clearer model cost comparisons, calmer themes and a Store for skills, MCP tools and supported local models. Your AI workspace for Windows. https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.6.6
 
-English and Arabic. Light and dark. Saved conversations and preferences.
+## Images
 
-Download the Windows installer or portable EXE:
-https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1
+- [Home, light](../assets/v0.6.6/home-light.jpg)
+- [Home, dark](../assets/v0.6.6/home-dark.jpg)
+- [Chat](../assets/v0.6.6/chat-light.jpg)
+- [Model comparison](../assets/v0.6.6/model-comparison.jpg)
+- [MCP Store](../assets/v0.6.6/mcp-store.jpg)
 
-Version 0.5.1 is an unsigned public preview. A supported AI provider account or local model service is required; provider usage charges and policies apply. NEXUS is proprietary software.
-
-Try it, share your workflow, and help shape the next version.
-
-## Short post
-
-NEXUS brings your AI tools into one Windows workspace. Direct chat, project context, and Mix coordination with 300 specialist roles. English/Arabic, light/dark. Public preview: https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1
-
-## Suggested hashtags
-
-`#NEXUS #AIAgents #DeveloperTools #Windows #LocalAI`
-
-## Links
-
-- [Project page](https://github.com/Ahmed-Khalil-Mohamed/NEXUS)
-- [Windows downloads](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1)
-- [User guide](USER-GUIDE.md)
-- [Discussions](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions)
-- [Launch announcement](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/discussions/1)
-
-Do not add invented endorsements, popularity statistics, guaranteed results, or claims that the 300 roles are bundled models. Campaign copy does not imply unrestricted access to private source.
+Actual English interface captures with demonstration data. See [provenance](../assets/README.md). Share official links rather than re-uploading EXEs. Suggested tags: #NEXUS #AIAgents #LocalAI #MCP #Windows #DeveloperTools.

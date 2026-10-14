@@ -11,7 +11,7 @@ The frameless splash lasts approximately 30 seconds and follows the saved theme.
 This preview is unsigned. Verify the release origin and compare the checksum without disabling Windows security:
 
 ```powershell
-Get-FileHash "$env:USERPROFILE\Downloads\NEXUS-Setup-0.5.1.exe" -Algorithm SHA256
+Get-FileHash "$env:USERPROFILE\Downloads\NEXUS-Setup-0.6.6.exe" -Algorithm SHA256
 ```
 
 Compare with SHA256SUMS.txt from the same release. A matching hash confirms the bytes match the published release; it is not an independent security certification.
@@ -28,7 +28,21 @@ Compare with SHA256SUMS.txt from the same release. A matching hash confirms the 
 
 Use **Settings → Tools & discovery** to manage providers and run connection checks. Checks send real short requests and can consume provider usage. Custom CLI tools run with your Windows permissions: configure trusted executables.
 
-Detection, enablement, and readiness are separate. An arbitrary graphical app cannot execute work merely because its EXE is detected. Custom connectors in this version do not support remote API servers or API keys.
+Detection, enablement, and readiness are separate. An arbitrary graphical app cannot execute work merely because its EXE is detected. In 0.6.6, Settings > API also supports compatible remote API connections with your own endpoint, model and credentials. Select a compatible protocol; a company preset does not guarantee every model supports chat or tools. Saved API keys use Windows user-scoped DPAPI protection.
+
+## Home and model comparison
+
+Write a draft on Home and select Mix or a configured connection. Continue opens Chat with the draft for review; it does not send a provider request. Recent conversations return you to saved work.
+
+Choose AI interests for official announcements. The model explorer compares one to three selected models using a shared input/output token estimate. Prices are a dated snapshot, not live quotes; bars compare cost, not quality. Follow official links for current pricing.
+
+## Store and extensions
+
+- **Discover skills:** choose a supported catalog, review the skill and select a detected compatible agent. Settings > Skills lists installed items and destinations.
+- **MCPs:** add a ready connection or search supported HTTP servers in the official registry. In Settings > MCP, discover tools and allow individual tools before use. Bundled Memory runs locally; Filesystem requires an allowed folder. OAuth sign-in is not supported.
+- **AI Local:** browse Hugging Face models, review the publisher, license and file size, then download a supported public single-file GGUF through Ollama. Ollama must be installed. Use in chat becomes available after installation is confirmed; local connections can also join Mix. Hardware and tool capabilities vary.
+
+Use @ in Chat to reference available tools, skills and MCP tools. Configuring a connection is not a guarantee that every model can execute every tool.
 
 ## Discovery
 
@@ -38,7 +52,7 @@ Protected paths and skipped links are reported. Display lists retain up to 1,000
 
 ## Conversations
 
-Select a provider, start a chat, and add your task, optional project context, and attachments. **Enter** sends; **Shift+Enter** adds a line. The composer expands with your text.
+Select the agent and model in the top chat toolbar, start a chat, and add your task, optional project context, and attachments. Supported CLI, Local AI and API connections appear here. **Enter** sends; **Shift+Enter** adds a line. The composer expands with your text. The sidebar keeps a unified conversation history.
 
 Use Direct chat for a provider conversation or Mix for coordinated work. Tool events are shown when reported by the integration; unavailable telemetry cannot be displayed.
 
@@ -57,6 +71,8 @@ Generated changes appear in the report. **Apply** checks original file hashes, r
 The library contains 300 role definitions across 20 categories. Each describes scope, workflow, deliverables, permissions, and quality criteria. Roles are instruction contracts executed through your selected AI providers.
 
 Choose specialists and providers. The fixed Manager plans assignments, dependencies, stages, and acceptance criteria. Large teams are planned in batches before the complete dependency plan is checked. Dependent tasks wait for prerequisites.
+
+The Mix workflow rail shows recorded stages and assignment states. Select a step to inspect assigned work, instructions, activity, output and provider/model metadata. Instructions are sent prompts, not private model reasoning. Model names record the requested choice; an API may resolve aliases internally. A Mix team can consist entirely of supported Local AI and API connections.
 
 NEXUS integrates contributions, reviews the result, and permits one repair/review pass when needed. Remaining issues are marked for follow-up. A failed specialist stops the run and cancels outstanding calls. Interrupted work is not silently resubmitted on restart.
 

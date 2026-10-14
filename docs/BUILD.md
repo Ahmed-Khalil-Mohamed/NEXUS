@@ -23,7 +23,7 @@ The tests exercise local functionality and test providers; they are not proof of
 npm run desktop:build
 ```
 
-This generates icons, builds the interface, and packages x64 NSIS and portable executables. The 0.5.1 package configuration outputs `release-v051/NEXUS-Setup-0.5.1.exe` and `release-v051/NEXUS-0.5.1-Windows.exe`. Current builds are unsigned; signing requires separately managed publisher credentials.
+This generates icons, builds the interface, and packages x64 NSIS and portable executables. The 0.6.6 package configuration outputs `release-v066/NEXUS-Setup-0.6.6.exe` and `release-v066/NEXUS-0.6.6-Windows.exe`. Current builds are unsigned; signing requires separately managed publisher credentials.
 
 ## Development commands
 

@@ -1,27 +1,29 @@
-![NEXUS — Your AI tools. One workspace.](https://raw.githubusercontent.com/Ahmed-Khalil-Mohamed/NEXUS/main/assets/nexus-launch.png)
+# NEXUS 0.6.6 — Release sharing kit
 
-## Meet NEXUS for Windows
+## Announcement
 
-Bring your AI tools, project context, and conversations into one desktop workspace.
+NEXUS 0.6.6 is here: a new home for your AI workflow.
 
-NEXUS 0.5.1 is now available as a **public preview**, with an installer and a portable EXE.
+Start an idea from the redesigned Home, return to recent conversations, and compare model API costs in clear side-by-side cards. A calmer light/dark palette brings the workspace together.
 
-- **Connect your tools:** built-in adapters for Codex CLI, Claude Code CLI, Ollama, and LM Studio.
-- **Build a team:** choose from 300 specialist roles, coordinated by a fixed NEXUS Manager in Mix.
-- **Work on your project:** select a folder, inspect context, and review generated changes before applying them.
-- **Follow the work:** see reported activity, time, available usage figures, and final file reports.
-- **Make it yours:** English and Arabic, light and dark, and saved preferences.
+This update also brings the NEXUS Store: discover compatible agent skills, connect MCP tools, and explore supported Hugging Face models for local use through Ollama. Choose supported agents, Local AI or API connections in Chat, or coordinate specialist roles through NEXUS Manager in Mix.
 
-The 300 roles run through your chosen providers in scheduled batches; they are not 300 bundled AI models. Your provider accounts or local model services are required, and their usage charges and policies apply. This preview is unsigned.
+English and Arabic. Windows x64. Installer and portable EXE.
 
-### Get started
+Download and read what's new: https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.6.6
 
-**[Download NEXUS for Windows](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.5.1)** · [User guide](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/blob/main/docs/USER-GUIDE.md) · [FAQ](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/blob/main/docs/FAQ.md)
+NEXUS is proprietary software. A supported provider or local model service is required. Model downloads, provider access, hardware requirements and usage charges vary. The 300 specialists are roles working through your chosen providers, not bundled models. Current downloads are unsigned.
 
-Choose an **EXE** from the release assets. NEXUS is proprietary; development source remains in a separate private repository.
+## Short announcement
 
-### Help shape the next version
+Meet the new NEXUS 0.6.6: a redesigned Home, clearer model cost comparisons, calmer themes and a Store for skills, MCP tools and supported local models. Your AI workspace for Windows. https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/tag/v0.6.6
 
-Which workflow would you try first: direct chat, Project Lab, or a Mix team? Share your feedback below, or use the [issue forms](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/issues/new/choose) for reproducible bugs and feature requests. Remove private information from reports.
+## Images
 
-If NEXUS is useful to you, star the repository and share the [launch kit](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/blob/main/docs/LAUNCH-KIT.md) with someone who works with AI tools.
+- [Home, light](../assets/v0.6.6/home-light.jpg)
+- [Home, dark](../assets/v0.6.6/home-dark.jpg)
+- [Chat](../assets/v0.6.6/chat-light.jpg)
+- [Model comparison](../assets/v0.6.6/model-comparison.jpg)
+- [MCP Store](../assets/v0.6.6/mcp-store.jpg)
+
+Actual English interface captures with demonstration data. See [provenance](../assets/README.md). Share official links rather than re-uploading EXEs. Suggested tags: #NEXUS #AIAgents #LocalAI #MCP #Windows #DeveloperTools.

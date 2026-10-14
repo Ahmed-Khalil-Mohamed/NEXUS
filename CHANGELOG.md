@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.6.6 — A new home for your AI workflow
+
+Released 2026-10-14. [Full release notes](docs/RELEASE-0.6.6.md).
+
+- Rebuilt Home with a draft composer, connection selection, recent conversations and workspace shortcuts.
+- Added one-to-three-model comparison cards, shared usage estimates and a searchable pricing directory.
+- Reorganized official AI announcements with publisher images and explicit fallback states.
+- Introduced neutral/petroleum light and dark palettes, refined chat controls and reduced-motion support.
+- Includes developments since public 0.5.1: Store skills/MCP/AI Local, compatible API connections, toolbar model selection, unified conversations, Mix stage inspection and expanded settings.
+- 73 tests, production build and Windows unpacked/portable launch checks passed.
+
 ## 0.5.1 — First public preview
 
 - Refined chat spacing, expanding composer, integrated project/attachment tools, and expandable reports.
