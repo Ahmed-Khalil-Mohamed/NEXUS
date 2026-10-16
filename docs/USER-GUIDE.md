@@ -11,7 +11,7 @@ The frameless splash lasts approximately 30 seconds and follows the saved theme.
 This preview is unsigned. Verify the release origin and compare the checksum without disabling Windows security:
 
 ```powershell
-Get-FileHash "$env:USERPROFILE\Downloads\NEXUS-Setup-0.6.6.exe" -Algorithm SHA256
+Get-FileHash "$env:USERPROFILE\Downloads\NEXUS-Setup-0.6.13.exe" -Algorithm SHA256
 ```
 
 Compare with SHA256SUMS.txt from the same release. A matching hash confirms the bytes match the published release; it is not an independent security certification.
@@ -28,7 +28,7 @@ Compare with SHA256SUMS.txt from the same release. A matching hash confirms the 
 
 Use **Settings → Tools & discovery** to manage providers and run connection checks. Checks send real short requests and can consume provider usage. Custom CLI tools run with your Windows permissions: configure trusted executables.
 
-Detection, enablement, and readiness are separate. An arbitrary graphical app cannot execute work merely because its EXE is detected. In 0.6.6, Settings > API also supports compatible remote API connections with your own endpoint, model and credentials. Select a compatible protocol; a company preset does not guarantee every model supports chat or tools. Saved API keys use Windows user-scoped DPAPI protection.
+Detection, enablement, and readiness are separate. An arbitrary graphical app cannot execute work merely because its EXE is detected. In 0.6.13, Settings > API also supports compatible remote API connections with your own endpoint, model and credentials. Select a compatible protocol; a company preset does not guarantee every model supports chat or tools. Saved API keys use Windows user-scoped DPAPI protection.
 
 ## Home and model comparison
 
@@ -110,3 +110,8 @@ General contains your profile, language, theme, context allowance, and audio end
 Back up `%APPDATA%/NEXUS/workspace` while NEXUS is closed before updating or changing machines. It contains private data and is not encrypted by NEXUS. Never attach it to public reports.
 
 Download updates from Releases and close NEXUS before installing. No automatic updater is configured for this preview.
+
+
+## New workspace navigation
+
+Home contains Overview, Activity, AI briefing and Model explorer. Chat has a top agent/model picker and Workflow, Activity and Files views. Store separates six browsing sections; Settings separates eight configuration areas. See the [full update](RELEASE-0.6.13.md), [API guide](API-GUIDE.md), [138-service catalog](API-CATALOG.md), [Google setup](GOOGLE-API-SETUP.md) and [MCP guide](MCP-GUIDE.md).

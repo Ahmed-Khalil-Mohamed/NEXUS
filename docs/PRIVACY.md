@@ -2,7 +2,7 @@
 
 ## Local storage
 
-NEXUS 0.6.6 stores settings, chats, role edits, attachments, project records, scan progress, generated files, and backups under `%APPDATA%/NEXUS/workspace`. The portable edition uses the same location. Replacing an EXE does not erase the workspace. The conversation database and ordinary workspace files are not encrypted by NEXUS. Saved API keys and MCP bearer credentials use a separate Windows user-scoped DPAPI vault; copying that vault to a different Windows account does not make its credentials portable.
+NEXUS 0.6.13 stores settings, chats, role edits, attachments, project records, scan progress, generated files, and backups under `%APPDATA%/NEXUS/workspace`. The portable edition uses the same location. Replacing an EXE does not erase the workspace. The conversation database and ordinary workspace files are not encrypted by NEXUS. Saved API keys and MCP bearer credentials use a separate Windows user-scoped DPAPI vault; copying that vault to a different Windows account does not make its credentials portable.
 
 ## AI requests
 

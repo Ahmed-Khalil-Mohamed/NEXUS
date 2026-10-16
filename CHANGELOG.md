@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.13 — 2026-10-16
+
+Consolidates 0.6.7–0.6.13: Advanced API research, workspace intelligence and usage, redesigned Home and model comparison, Chat Studio and Mix, Store, Settings and connection management. Includes all 138 API profiles and 16 chat presets. [Release notes](docs/RELEASE-0.6.13.md).
+
 ## 0.6.6 — A new home for your AI workflow
 
 Released 2026-10-14. [Full release notes](docs/RELEASE-0.6.6.md).

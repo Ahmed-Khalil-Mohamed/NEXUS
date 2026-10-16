@@ -1,0 +1,2817 @@
+{
+  "snapshot_date": "2026-10-15",
+  "service_count": 138,
+  "scope": "Research guidance, not live account verification or universal API support. No user credentials included.",
+  "services": [
+    {
+      "service_id": "API001",
+      "name": "Google Gemini API",
+      "category": "AI and LLMs",
+      "benefit": "Add text generation, summarization, structured extraction and multimodal understanding to an application.",
+      "setup_entry_url": "https://aistudio.google.com/app/apikey",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Sign in to AI Studio, accept its terms, select or import the intended project, and obtain a restricted Gemini key.",
+        "Use the intended project key on the backend and validate model, quota, key restrictions and one test response.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Gemini API key associated with a Cloud project; current authorization keys can be service-account-bound.",
+      "caveat": "A free chat website and a paid consumer subscription are not API entitlements. Review free-tier data handling before sending private content.",
+      "source_urls": [
+        "https://ai.google.dev/gemini-api/docs/api-key",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://ai.google.dev/gemini-api/docs/rate-limits",
+        "https://ai.google.dev/gemini-api/docs/openai"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Chat connector"
+    },
+    {
+      "service_id": "API002",
+      "name": "Groq API",
+      "category": "AI and LLMs",
+      "benefit": "Run supported language models and speech recognition without hosting inference hardware.",
+      "setup_entry_url": "https://console.groq.com/keys",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Groq organization key and select a model listed in your organization limits.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Requests and token budgets are shared at organization level. Preview models and audio products have separate limits.",
+      "source_urls": [
+        "https://console.groq.com/docs/rate-limits",
+        "https://console.groq.com/docs/models",
+        "https://console.groq.com/docs/openai"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Chat connector"
+    },
+    {
+      "service_id": "API003",
+      "name": "OpenRouter Free",
+      "category": "AI and LLMs",
+      "benefit": "Access multiple model providers through one integration and evaluate free model routes.",
+      "setup_entry_url": "https://openrouter.ai/settings/keys",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an OpenRouter key, set a key spending cap where useful, and explicitly select a verified free route.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "A free router may change models. A key spending limit is not the whole account balance. Do not assume a daily request counter exists in the key response.",
+      "source_urls": [
+        "https://openrouter.ai/docs/api/api-reference/api-keys/get-current-api-key",
+        "https://openrouter.ai/docs/api_reference/limits",
+        "https://openrouter.ai/pricing",
+        "https://openrouter.ai/openrouter/free",
+        "https://openrouter.ai/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Chat connector"
+    },
+    {
+      "service_id": "API004",
+      "name": "Mistral AI API",
+      "category": "AI and LLMs",
+      "benefit": "Add chat, coding, text analysis and supported document capabilities through a hosted API.",
+      "setup_entry_url": "https://console.mistral.ai/api-keys",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a workspace API key and confirm Free mode, included usage, model availability and pay-as-you-go settings.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Do not treat old fixed-token or dollar allowances as a universal entitlement. Different capabilities consume different units.",
+      "source_urls": [
+        "https://docs.mistral.ai/admin/billing-usage/usage-limits",
+        "https://docs.mistral.ai/api/endpoint/chat"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Chat connector"
+    },
+    {
+      "service_id": "API005",
+      "name": "Cloudflare Workers AI",
+      "category": "AI and LLMs",
+      "benefit": "Run eligible AI models close to your application using Workers bindings or REST.",
+      "setup_entry_url": "https://dash.cloudflare.com/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose your Cloudflare account, create a scoped Workers AI token or binding, and select an eligible model.",
+        "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Scoped API token and account/resource ID, or a Workers binding; storage may use scoped S3 credentials.",
+      "caveat": "Some models and features are outside the free allocation. Record model-specific consumption rather than assuming one request equals one Neuron.",
+      "source_urls": [
+        "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API006",
+      "name": "OpenAI Moderation API",
+      "category": "AI and LLMs",
+      "benefit": "Classify potentially harmful text and image content as one component of application safety.",
+      "setup_entry_url": "https://platform.openai.com/api-keys",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a project API key on the OpenAI API platform and restrict its use to the intended backend.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Moderation is not chat, image generation or speech generation, and is not a guarantee that every harmful item will be detected.",
+      "source_urls": [
+        "https://developers.openai.com/api/docs/guides/moderation",
+        "https://developers.openai.com/api/docs/models/omni-moderation-latest"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API007",
+      "name": "Cohere Evaluation API",
+      "category": "AI and LLMs",
+      "benefit": "Evaluate language, retrieval and related AI capabilities before selecting a production plan.",
+      "setup_entry_url": "https://docs.cohere.com/docs/rate-limits",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Cohere account and evaluation key; distinguish it from a production key before release.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Do not use evaluation availability as evidence of free commercial production access.",
+      "source_urls": [
+        "https://docs.cohere.com/docs/rate-limits"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Chat connector"
+    },
+    {
+      "service_id": "API008",
+      "name": "Cerebras Inference",
+      "category": "AI and LLMs",
+      "benefit": "Evaluate hosted inference and compare its behavior with other model providers.",
+      "setup_entry_url": "https://inference-docs.cerebras.ai/support/rate-limits",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the account, review the trial conditions, and manually approve payment-method verification before API activation.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "The API remains inactive without required payment verification. Trial expiry is separate from rate limits.",
+      "source_urls": [
+        "https://inference-docs.cerebras.ai/support/rate-limits"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Chat connector"
+    },
+    {
+      "service_id": "API009",
+      "name": "Hugging Face Inference Providers",
+      "category": "AI and LLMs",
+      "benefit": "Try multiple hosted model providers using a Hugging Face access token.",
+      "setup_entry_url": "https://huggingface.co/settings/tokens",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Hugging Face token with inference permissions, review model gating, and use routed billing for included credits.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "This corrects earlier files that stated zero credits. Bring-your-own-provider-key billing is separate and does not use the same credit.",
+      "source_urls": [
+        "https://huggingface.co/docs/inference-providers/en/pricing",
+        "https://huggingface.co/docs/inference-providers/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Chat connector"
+    },
+    {
+      "service_id": "API010",
+      "name": "Z.AI / Zhipu",
+      "category": "AI and LLMs",
+      "benefit": "Evaluate the specific Flash text or vision models that the relevant platform lists as free.",
+      "setup_entry_url": "https://docs.z.ai/guides/overview/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose either the international Z.AI platform or the China platform, create the correct account/key, and check the model price.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "FlashX is not the same product as Flash. Regional platforms, keys, eligibility and retirements are not interchangeable.",
+      "source_urls": [
+        "https://docs.z.ai/guides/overview/pricing",
+        "https://docs.z.ai/guides/overview/quick-start"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API011",
+      "name": "Aion Labs",
+      "category": "AI and LLMs",
+      "benefit": "Evaluate supported text-generation models for a small prototype.",
+      "setup_entry_url": "https://www.aionlabs.ai/docs/rate-limits/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a provider account/key and confirm that the selected model is included in the free account.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "The daily token ceiling can bind before the request ceiling. Confirm the balance and model eligibility in the account.",
+      "source_urls": [
+        "https://www.aionlabs.ai/docs/rate-limits/",
+        "https://www.aionlabs.ai/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API012",
+      "name": "Kilo AI Gateway",
+      "category": "AI and LLMs",
+      "benefit": "Experiment with eligible free models through a gateway, including an anonymous access path.",
+      "setup_entry_url": "https://kilo.ai/docs/gateway/authentication",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Select a currently free model and review anonymous gateway restrictions; create an account only for account features you need.",
+        "Select an eligible endpoint/model, implement per-IP backoff and do not forward confidential data without policy review.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Anonymous requests only for eligible models; a provider token is required for account-backed access.",
+      "caveat": "A public gateway is not an unlimited production entitlement. Do not send sensitive material without reviewing its data terms.",
+      "source_urls": [
+        "https://kilo.ai/docs/gateway/authentication"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API013",
+      "name": "LLM7.io",
+      "category": "AI and LLMs",
+      "benefit": "Try a limited hosted model gateway using its current token-based access.",
+      "setup_entry_url": "https://docs.llm7.io/limits",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Obtain a current LLM7 API token and choose a model allowed by the token tier.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Older claims of unrestricted keyless access should not be reused. The provider states that free limits may be reduced.",
+      "source_urls": [
+        "https://docs.llm7.io/limits",
+        "https://docs.llm7.io/quickstart",
+        "https://docs.llm7.io/guides/models-api"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API014",
+      "name": "ModelScope",
+      "category": "AI and LLMs",
+      "benefit": "Investigate models exposed through ModelScope API-Inference.",
+      "setup_entry_url": "https://www.modelscope.ai/docs/model-service/API-Inference/limits",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Review the official regional site, identity requirements, model entitlement and commercial-use terms before obtaining a token.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Do not copy a secondary directory's request count into a production quota. Real-name verification or regional restrictions may apply.",
+      "source_urls": [
+        "https://www.modelscope.ai/docs/model-service/API-Inference/limits",
+        "https://modelscope.cn/docs/model-service/API-Inference/intro"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API015",
+      "name": "NVIDIA NIM",
+      "category": "AI and LLMs",
+      "benefit": "Evaluate NVIDIA-hosted model endpoints and assess a later self-hosted NIM deployment.",
+      "setup_entry_url": "https://docs.api.nvidia.com/nim/docs/product",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the required developer account, complete the requested verification, accept model terms, and generate a key.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Free evaluation, self-hosting costs, model licenses and production licensing must be assessed separately.",
+      "source_urls": [
+        "https://docs.api.nvidia.com/nim/docs/product"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Chat connector"
+    },
+    {
+      "service_id": "API016",
+      "name": "Ollama Cloud",
+      "category": "AI and LLMs",
+      "benefit": "Use hosted models when local hardware is insufficient.",
+      "setup_entry_url": "https://docs.ollama.com/cloud",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create/sign in to an Ollama account, review its cloud plan, and obtain the cloud credentials required for your client.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "A local client can route to cloud models. Local URL use alone does not establish local-only data processing.",
+      "source_urls": [
+        "https://docs.ollama.com/cloud",
+        "https://docs.ollama.com/api/openai-compatibility"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API017",
+      "name": "OVHcloud AI Endpoints",
+      "category": "AI and LLMs",
+      "benefit": "Evaluate hosted AI endpoints through anonymous testing or a provisioned cloud project.",
+      "setup_entry_url": "https://docs.ovhcloud.com/en/guides/public-cloud/ai-machine-learning/ai-endpoints-getting-started",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Verify whether the desired model supports anonymous testing; use a project/key only after reviewing billing terms.",
+        "Select an eligible endpoint/model, implement per-IP backoff and do not forward confidential data without policy review.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Anonymous requests only for eligible models; a provider token is required for account-backed access.",
+      "caveat": "An anonymous demo allowance is not the allowance of an authenticated account. No live regional test has been run.",
+      "source_urls": [
+        "https://docs.ovhcloud.com/en/guides/public-cloud/ai-machine-learning/ai-endpoints-getting-started"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API018",
+      "name": "SiliconFlow",
+      "category": "AI and LLMs",
+      "benefit": "Investigate hosted open-model inference on the platform available to your region.",
+      "setup_entry_url": "https://docs.siliconflow.cn/cn/usercases/use-siliconcloud-in-ccswitch",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose the correct regional platform, complete required account or identity checks, create a key, and verify a zero-priced model.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "A model appearing in /models does not prove that it is free. Registration and model licensing require confirmation.",
+      "source_urls": [
+        "https://docs.siliconflow.cn/cn/usercases/use-siliconcloud-in-ccswitch",
+        "https://docs.siliconflow.cn/cn/legals/terms-of-service"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API019",
+      "name": "OpenAI Generative API",
+      "category": "AI and LLMs",
+      "benefit": "Build text, image and audio features using paid API products and available account entitlements.",
+      "setup_entry_url": "https://platform.openai.com/api-keys",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an API project, approve its billing or credit arrangement, create a restricted key, and set application-side limits.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "A ChatGPT login or subscription does not automatically activate paid API credits. Moderation is a separate no-cost endpoint.",
+      "source_urls": [
+        "https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform",
+        "https://developers.openai.com/api/docs/pricing",
+        "https://developers.openai.com/cookbook/examples/completions_usage_api"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Chat connector"
+    },
+    {
+      "service_id": "API020",
+      "name": "GitHub Models",
+      "category": "AI and LLMs",
+      "benefit": "Historical directory entry retained so old tutorials are not mistaken for an available integration.",
+      "setup_entry_url": "https://docs.github.com/en/github-models",
+      "activation_steps": [
+        "Do not provision this retired service.",
+        "Select a supported replacement and migrate the integration."
+      ],
+      "credential": "Not applicable to new use.",
+      "caveat": "GitHub REST APIs and GitHub Copilot are separate products and are not described as retired here.",
+      "source_urls": [
+        "https://docs.github.com/en/github-models"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API021",
+      "name": "Azure AI Translator",
+      "category": "Translation, speech and OCR",
+      "benefit": "Translate application text, detect language and use supported dictionary or transliteration functions.",
+      "setup_entry_url": "https://azure.microsoft.com/en-us/pricing/details/translator/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an Azure subscription/resource, explicitly choose the available F0 tier, and copy the region and resource credentials.",
+        "Use the resource-specific region and endpoint; test the chosen feature and verify its own character/audio quota.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Service key plus region/endpoint, or Microsoft Entra credentials where supported.",
+      "caveat": "Document translation and specialized features may have different eligibility. Do not let provisioning silently choose a paid tier.",
+      "source_urls": [
+        "https://azure.microsoft.com/en-us/pricing/details/translator/",
+        "https://www.microsoft.com/en-us/translator/business/faq/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API022",
+      "name": "Azure AI Speech",
+      "category": "Translation, speech and OCR",
+      "benefit": "Convert audio to text and text to neural speech for an application.",
+      "setup_entry_url": "https://azure.microsoft.com/en-us/pricing/details/speech/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Speech resource in a supported region, select F0, and configure its SDK or REST credentials.",
+        "Use the resource-specific region and endpoint; test the chosen feature and verify its own character/audio quota.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Service key plus region/endpoint, or Microsoft Entra credentials where supported.",
+      "caveat": "Audio seconds and synthesized characters are separate budgets. Batch, custom and premium features have different conditions.",
+      "source_urls": [
+        "https://azure.microsoft.com/en-us/pricing/details/speech/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API023",
+      "name": "Google Cloud Text-to-Speech",
+      "category": "Translation, speech and OCR",
+      "benefit": "Generate speech from text for reading, accessibility and voice responses.",
+      "setup_entry_url": "https://cloud.google.com/text-to-speech/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Select a Cloud project, enable Text-to-Speech, approve billing, and configure a least-privilege runtime identity.",
+        "Configure the correct credential type, restrict keys where supported, separate projects/environments and test the exact product/SKU.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "API key for supported products, or service account / OAuth / application-default credentials as documented.",
+      "caveat": "The free allowance is voice/SKU-specific. Do not apply these counts to all Gemini or custom voice products.",
+      "source_urls": [
+        "https://cloud.google.com/text-to-speech/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API024",
+      "name": "Google Cloud Vision",
+      "category": "Translation, speech and OCR",
+      "benefit": "Extract printed text and detect supported visual features in images.",
+      "setup_entry_url": "https://cloud.google.com/vision/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Enable Vision in the intended billed project and configure a runtime identity with required permissions.",
+        "Configure the correct credential type, restrict keys where supported, separate projects/environments and test the exact product/SKU.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "API key for supported products, or service account / OAuth / application-default credentials as documented.",
+      "caveat": "One image with several requested features can create multiple billable units. Storage and other services may add charges.",
+      "source_urls": [
+        "https://cloud.google.com/vision/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API025",
+      "name": "Google Cloud Translation (NMT)",
+      "category": "Translation, speech and OCR",
+      "benefit": "Provide managed text translation inside a backend.",
+      "setup_entry_url": "https://docs.cloud.google.com/translate/docs/setup",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Enable Cloud Translation, link billing, choose Basic or Advanced, and use the authentication supported by that edition.",
+        "Configure the correct credential type, restrict keys where supported, separate projects/environments and test the exact product/SKU.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "API key for supported products, or service account / OAuth / application-default credentials as documented.",
+      "caveat": "The NMT allowance is not a blanket credit for document, custom-model or other translation products.",
+      "source_urls": [
+        "https://docs.cloud.google.com/translate/docs/setup",
+        "https://cloud.google.com/products/translate/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API026",
+      "name": "OCR.Space",
+      "category": "Translation, speech and OCR",
+      "benefit": "Convert supported image or PDF text into machine-readable output.",
+      "setup_entry_url": "https://ocr.space/ocrapi",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Register for a free OCR key, select the engine, and enforce input-size and PDF-page limits before upload.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Earlier files contained inconsistent quota summaries. Do not treat 25,000/month as overriding an IP/day limit or page-size restriction.",
+      "source_urls": [
+        "https://ocr.space/ocrapi",
+        "https://ocr.space/faq"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API027",
+      "name": "ElevenLabs API Free",
+      "category": "Translation, speech and OCR",
+      "benefit": "Prototype supported speech generation and voice features.",
+      "setup_entry_url": "https://elevenlabs.io/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an ElevenLabs account/key and check the free plan's voice, API and output-use entitlements.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "The earlier free-plan review excluded commercial use. Voice cloning also requires the speaker's authorization and applicable rights.",
+      "source_urls": [
+        "https://elevenlabs.io/pricing",
+        "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API028",
+      "name": "DeepL API Free / Developer",
+      "category": "Translation, speech and OCR",
+      "benefit": "Evaluate text translation through an API, while separating legacy and new account plans.",
+      "setup_entry_url": "https://support.deepl.com/hc/en-us/articles/360021200939-DeepL-API-plans",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Inspect the plan offered to your account, select an API plan rather than a web-translator plan, and create a key.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "The earlier claim that every new account gets 500,000 free characters/month was incorrect. Check checkout pricing and eligibility before subscribing.",
+      "source_urls": [
+        "https://support.deepl.com/hc/en-us/articles/360021200939-DeepL-API-plans",
+        "https://developers.deepl.com/docs/resources/usage-limits"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API029",
+      "name": "MyMemory",
+      "category": "Translation, speech and OCR",
+      "benefit": "Add lightweight translation to small applications or prototypes.",
+      "setup_entry_url": "https://mymemory.translated.net/doc/usagelimits.php",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Read the usage policy and set an appropriate contact identifier only when needed for the higher documented limit.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Not a substitute for a private translation contract. Review how submitted text is used and avoid exposing personal content unnecessarily.",
+      "source_urls": [
+        "https://mymemory.translated.net/doc/usagelimits.php",
+        "https://mymemory.translated.net/doc/spec.php"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API030",
+      "name": "Deepgram",
+      "category": "Translation, speech and OCR",
+      "benefit": "Evaluate speech recognition and other supported speech APIs.",
+      "setup_entry_url": "https://deepgram.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the account, inspect the exact trial balance and expiry, and generate a scoped project key.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Track seconds and feature charges. A trial offer does not establish indefinite free speech processing.",
+      "source_urls": [
+        "https://deepgram.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API031",
+      "name": "Brave Search API",
+      "category": "Web search and extraction",
+      "benefit": "Add search results to an application or AI research workflow.",
+      "setup_entry_url": "https://brave.com/search/api/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Search API subscription/key, review card requirements, and select the correct search product.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Credit-to-request conversion changes with product and price. Search licensing and downstream use still apply.",
+      "source_urls": [
+        "https://brave.com/search/api/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API032",
+      "name": "Tavily API",
+      "category": "Web search and extraction",
+      "benefit": "Retrieve web results and evidence for AI-assisted research.",
+      "setup_entry_url": "https://www.tavily.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Tavily account/key and set the intended search depth and credit budget.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "One application question can invoke several searches. Do not count one search credit as one complete user task.",
+      "source_urls": [
+        "https://www.tavily.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API033",
+      "name": "Exa API",
+      "category": "Web search and extraction",
+      "benefit": "Find semantically relevant pages and retrieve their content.",
+      "setup_entry_url": "https://exa.ai/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an Exa key and select search/content operations after checking their separate unit prices.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "More results, content extraction and advanced search modes can change the cost of a query.",
+      "source_urls": [
+        "https://exa.ai/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API034",
+      "name": "Firecrawl API",
+      "category": "Web search and extraction",
+      "benefit": "Extract web pages as Markdown or structured data for indexing and retrieval.",
+      "setup_entry_url": "https://www.firecrawl.dev/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a key, choose a scrape or search operation, and restrict crawl scope and concurrency.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "A site crawl can multiply calls rapidly. Respect source-site access restrictions, robots policies and content rights.",
+      "source_urls": [
+        "https://www.firecrawl.dev/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API035",
+      "name": "Jina Reader API",
+      "category": "Web search and extraction",
+      "benefit": "Convert a URL into readable content for an AI or search pipeline.",
+      "setup_entry_url": "https://jina.ai/reader/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Test the public reader within documented limits; create a Jina key only for the authenticated entitlement you need.",
+        "Use one explicit access path; do not mix anonymous and authenticated quota assumptions.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No secret on the public path; optional provider token or application identification where documented.",
+      "caveat": "Do not call a one-time token grant a monthly allowance. Retrieved pages remain untrusted content, not executable instructions.",
+      "source_urls": [
+        "https://jina.ai/reader/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API036",
+      "name": "SerpApi",
+      "category": "Web search and extraction",
+      "benefit": "Receive search-engine results as structured JSON.",
+      "setup_entry_url": "https://serpapi.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a SerpApi key and choose the supported engine and request parameters.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "It is a third-party search-results provider, not the official Google Search API. Check downstream rights and query accounting.",
+      "source_urls": [
+        "https://serpapi.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API037",
+      "name": "Supabase",
+      "category": "Databases and backend",
+      "benefit": "Build a PostgreSQL-backed app with authentication, storage, REST access and realtime features.",
+      "setup_entry_url": "https://supabase.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an organization/project, choose a region, define the schema, and configure row-level security before exposing client access.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Publishable/anonymous client keys are not service-role secrets. Free-project inactivity and backup limits require a separate operating plan.",
+      "source_urls": [
+        "https://supabase.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API038",
+      "name": "Firebase / Cloud Firestore",
+      "category": "Databases and backend",
+      "benefit": "Store application documents with SDK synchronization and controlled client access.",
+      "setup_entry_url": "https://firebase.google.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Firebase project, register the app, create the Firestore database, choose its region and deploy restrictive Security Rules.",
+        "Install the platform SDK, configure secure rules or server permissions, register device/app details and perform a controlled feature test.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Firebase app configuration plus appropriate SDK identity, security rules and/or server service-account authorization.",
+      "caveat": "Creating a Firebase project does not create every database or authorize all users. Test rules and indexes before launch.",
+      "source_urls": [
+        "https://firebase.google.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API039",
+      "name": "Neon Postgres",
+      "category": "Databases and backend",
+      "benefit": "Run managed PostgreSQL without administering a database VM.",
+      "setup_entry_url": "https://neon.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a project/database and a least-privilege database role, then store the TLS connection string on the backend.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "This is not automatically a public REST CRUD backend. Protect connection strings and account for autosuspend and resource limits.",
+      "source_urls": [
+        "https://neon.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API040",
+      "name": "Upstash Redis REST",
+      "category": "Databases and backend",
+      "benefit": "Add caching, counters, sessions and application rate limits.",
+      "setup_entry_url": "https://upstash.com/pricing/redis",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the eligible Redis database and obtain its scoped REST token or Redis credentials.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "A single logical operation may use multiple commands. Do not put full-access database credentials in a public client.",
+      "source_urls": [
+        "https://upstash.com/pricing/redis",
+        "https://upstash.com/docs/redis/overall/billing",
+        "https://upstash.com/blog/redis-pricing-comparison-every-major-provider-in-2026-with-numbers"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API041",
+      "name": "Appwrite Cloud",
+      "category": "Databases and backend",
+      "benefit": "Use managed accounts, databases, file storage, functions and realtime services.",
+      "setup_entry_url": "https://appwrite.io/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a project, register allowed app platforms, define data permissions and generate only the required server API key scopes.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Project creation is not equivalent to application configuration. Verify each Free-plan resource limit in the console.",
+      "source_urls": [
+        "https://appwrite.io/pricing",
+        "https://appwrite.io/docs/advanced/billing/free"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API042",
+      "name": "Qdrant Cloud",
+      "category": "Databases and backend",
+      "benefit": "Store embeddings for semantic search and retrieval-augmented generation.",
+      "setup_entry_url": "https://qdrant.tech/pricing/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the free cluster, copy its endpoint/key and create collections with the correct vector dimensions.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Model embedding costs are separate. A small free cluster is not a high-availability production guarantee.",
+      "source_urls": [
+        "https://qdrant.tech/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API043",
+      "name": "Pinecone Starter",
+      "category": "Databases and backend",
+      "benefit": "Host vector or hybrid search indexes for retrieval and recommendations.",
+      "setup_entry_url": "https://www.pinecone.io/pricing/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Starter project/key and an index matched to your embedding model and region.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Do not confuse Starter with a time-limited paid-plan trial. Inference, storage and query accounting are distinct.",
+      "source_urls": [
+        "https://www.pinecone.io/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API044",
+      "name": "Cloudflare D1",
+      "category": "Databases and backend",
+      "benefit": "Store SQL data for a Workers-based backend.",
+      "setup_entry_url": "https://developers.cloudflare.com/d1/platform/pricing/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the database, apply migrations and bind it to the intended Worker or scoped API token.",
+        "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Scoped API token and account/resource ID, or a Workers binding; storage may use scoped S3 credentials.",
+      "caveat": "Usage counts rows, not merely SQL statements. An inefficient scan can consume a large read allowance.",
+      "source_urls": [
+        "https://developers.cloudflare.com/d1/platform/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API045",
+      "name": "Turso",
+      "category": "Databases and backend",
+      "benefit": "Use managed SQLite/libSQL databases for lightweight distributed applications.",
+      "setup_entry_url": "https://turso.tech/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a database and restricted database token, then configure the client with its database URL.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Protect tokens and distinguish database count from read, write and storage entitlements.",
+      "source_urls": [
+        "https://turso.tech/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API046",
+      "name": "Cloudflare Workers KV",
+      "category": "Databases and backend",
+      "benefit": "Store configuration, cached values and simple key-value data at the edge.",
+      "setup_entry_url": "https://developers.cloudflare.com/kv/platform/pricing/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a KV namespace, bind it to a Worker and select only the needed token permissions.",
+        "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Scoped API token and account/resource ID, or a Workers binding; storage may use scoped S3 credentials.",
+      "caveat": "Choose data consistency requirements deliberately; do not use a cache-shaped service as an unexamined financial ledger.",
+      "source_urls": [
+        "https://developers.cloudflare.com/kv/platform/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API047",
+      "name": "Cloudflare Workers",
+      "category": "Databases and backend",
+      "benefit": "Deploy HTTP endpoints, backend logic and edge request processing.",
+      "setup_entry_url": "https://developers.cloudflare.com/workers/platform/pricing/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Worker, configure secrets/bindings and routes, then deploy an authenticated endpoint where required.",
+        "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Scoped API token and account/resource ID, or a Workers binding; storage may use scoped S3 credentials.",
+      "caveat": "Request count is only one constraint. Connected storage, paid APIs and model inference have their own charges.",
+      "source_urls": [
+        "https://developers.cloudflare.com/workers/platform/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API048",
+      "name": "Firebase Authentication",
+      "category": "Identity and security",
+      "benefit": "Manage application users and supported sign-in providers.",
+      "setup_entry_url": "https://firebase.google.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Register the app and explicitly enable each sign-in provider, allowed domain and required client credential.",
+        "Install the platform SDK, configure secure rules or server permissions, register device/app details and perform a controlled feature test.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Firebase app configuration plus appropriate SDK identity, security rules and/or server service-account authorization.",
+      "caveat": "Google sign-in for your app requires its own configuration. It does not authorize Gmail, Drive or every Google Cloud API.",
+      "source_urls": [
+        "https://firebase.google.com/pricing",
+        "https://firebase.google.com/docs/auth/web/google-signin"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API049",
+      "name": "Clerk",
+      "category": "Identity and security",
+      "benefit": "Add user sessions, hosted sign-in screens and account management.",
+      "setup_entry_url": "https://clerk.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an application, select sign-in methods, configure origins/redirects and separate public from secret keys.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "SSO with Google is a sign-in option only when configured. It does not grant permission to Google user content.",
+      "source_urls": [
+        "https://clerk.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API050",
+      "name": "Auth0",
+      "category": "Identity and security",
+      "benefit": "Provide OAuth/OIDC login, identity federation and token-based application access.",
+      "setup_entry_url": "https://auth0.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a tenant and application, configure callback/logout URLs, APIs, audiences and approved identity connections.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Identity authentication and resource authorization are different. Management tokens must remain on trusted servers.",
+      "source_urls": [
+        "https://auth0.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API051",
+      "name": "Cloudflare Turnstile",
+      "category": "Identity and security",
+      "benefit": "Reduce automated abuse of forms, login and account creation.",
+      "setup_entry_url": "https://developers.cloudflare.com/turnstile/plans/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a widget for the permitted domains, install its site key and keep its verification secret server-side.",
+        "Render the widget and verify tokens server-side with expiry and failure handling.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Public sitekey on the frontend; secret key on the backend.",
+      "caveat": "Rendering the widget is insufficient: validate each returned token on the backend and do not treat it as user authentication.",
+      "source_urls": [
+        "https://developers.cloudflare.com/turnstile/plans/",
+        "https://developers.cloudflare.com/turnstile/get-started/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API052",
+      "name": "HIBP Pwned Passwords",
+      "category": "Identity and security",
+      "benefit": "Check whether a password hash prefix appears in the breach corpus.",
+      "setup_entry_url": "https://haveibeenpwned.com/API/V3",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Implement the hash-prefix range lookup and compare suffixes locally; never submit the plaintext password.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Do not log passwords or full unsalted password hashes. This is a password-screening signal, not a complete security assessment.",
+      "source_urls": [
+        "https://haveibeenpwned.com/API/V3",
+        "https://haveibeenpwned.com/API/v3"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API053",
+      "name": "Resend",
+      "category": "Email, notifications and realtime",
+      "benefit": "Send transactional email such as verification messages and receipts.",
+      "setup_entry_url": "https://resend.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an API key, verify a sending domain and publish the required DNS records before using production recipients.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Trial/test sender permissions may restrict recipients. Delivery, bounces and suppression handling require backend work.",
+      "source_urls": [
+        "https://resend.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API054",
+      "name": "Mailjet",
+      "category": "Email, notifications and realtime",
+      "benefit": "Send application email through an API or SMTP.",
+      "setup_entry_url": "https://www.mailjet.com/pricing/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create API credentials, verify the sender/domain and configure SPF/DKIM as instructed.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Daily and monthly limits apply together. Do not confuse email verification codes with free SMS delivery.",
+      "source_urls": [
+        "https://www.mailjet.com/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API055",
+      "name": "Firebase Cloud Messaging",
+      "category": "Email, notifications and realtime",
+      "benefit": "Deliver push notifications to registered Android, iOS and web app instances.",
+      "setup_entry_url": "https://firebase.google.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Register each app, obtain device tokens, configure server credentials and notification permissions; add APNs/web configuration where needed.",
+        "Install the platform SDK, configure secure rules or server permissions, register device/app details and perform a controlled feature test.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Firebase app configuration plus appropriate SDK identity, security rules and/or server service-account authorization.",
+      "caveat": "Device tokens are delivery addresses, not account passwords. Push does not automatically implement incoming calls or SMS.",
+      "source_urls": [
+        "https://firebase.google.com/pricing",
+        "https://firebase.google.com/docs/cloud-messaging",
+        "https://firebase.google.com/docs/cloud-messaging/send/v1-api"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API056",
+      "name": "Telegram Bot API",
+      "category": "Email, notifications and realtime",
+      "benefit": "Build bot commands, customer-service interactions and operational notifications inside Telegram.",
+      "setup_entry_url": "https://core.telegram.org/bots/faq",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a bot through BotFather, store its token, and configure polling or an HTTPS webhook.",
+        "Protect the token, validate webhooks, record chat authorization and respect message/broadcast limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Bot token; user/chat identifiers and optional webhook secret.",
+      "caveat": "A bot normally cannot initiate a private conversation before the person interacts with it. Treat webhook and bot credentials as secrets.",
+      "source_urls": [
+        "https://core.telegram.org/bots/faq"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API057",
+      "name": "Discord API / Webhooks",
+      "category": "Email, notifications and realtime",
+      "benefit": "Send team alerts or build community bot integrations.",
+      "setup_entry_url": "https://docs.discord.com/developers/resources/webhook",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the bot or channel webhook with the required server permissions and store its token or webhook URL privately.",
+        "Keep webhook URLs server-side, validate payloads and implement retry-after/backoff.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Webhook URL/token for the destination; bot applications use separate credentials.",
+      "caveat": "A webhook URL can grant posting access. Respect Retry-After and limit bot permissions to the intended channels.",
+      "source_urls": [
+        "https://docs.discord.com/developers/resources/webhook",
+        "https://docs.discord.com/developers/topics/rate-limits"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API058",
+      "name": "Pusher Channels",
+      "category": "Email, notifications and realtime",
+      "benefit": "Publish live chat events, presence and interface updates.",
+      "setup_entry_url": "https://pusher.com/channels/pricing/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Channels application and implement server authentication for private/presence channels.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Connections and messages are different limits. Realtime transport alone does not provide chat storage or user authorization.",
+      "source_urls": [
+        "https://pusher.com/channels/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API059",
+      "name": "Ably",
+      "category": "Email, notifications and realtime",
+      "benefit": "Synchronize application events, chat and presence over managed realtime channels.",
+      "setup_entry_url": "https://ably.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an application/key and issue restricted short-lived client tokens from your backend.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Check channel, connection and message accounting. Do not place an unrestricted root key in a mobile application.",
+      "source_urls": [
+        "https://ably.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API060",
+      "name": "OneSignal",
+      "category": "Email, notifications and realtime",
+      "benefit": "Manage push delivery and targeted messaging across supported channels.",
+      "setup_entry_url": "https://onesignal.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an application, configure each platform's push credentials, install the SDK and collect appropriate consent.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "A provider dashboard does not override iOS/Android permission or background-execution requirements.",
+      "source_urls": [
+        "https://onesignal.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API061",
+      "name": "Brevo Email API",
+      "category": "Email, notifications and realtime",
+      "benefit": "Send verification, order and other transactional emails.",
+      "setup_entry_url": "https://www.brevo.com/features/email-api/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the account/API key, validate sender/domain ownership and configure required authentication records.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Free email is not a free SMS product. Review sender restrictions and contact-data responsibilities.",
+      "source_urls": [
+        "https://www.brevo.com/features/email-api/",
+        "https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API062",
+      "name": "Daily Video API",
+      "category": "Email, notifications and realtime",
+      "benefit": "Embed voice/video rooms and participant sessions in an app.",
+      "setup_entry_url": "https://www.daily.co/pricing/video-sdk/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an account/key, configure private rooms and issue meeting tokens from the backend.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "One two-person minute equals two participant-minutes. Recording, streaming and other features can have separate prices.",
+      "source_urls": [
+        "https://www.daily.co/pricing/video-sdk/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API063",
+      "name": "Twilio SMS / Voice",
+      "category": "Email, notifications and realtime",
+      "benefit": "Evaluate SMS verification, messaging or programmable voice.",
+      "setup_entry_url": "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create and verify an account, review allowed destination countries, verify required recipients and configure a test sender.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Egypt SMS delivery is not established here. Trial credits and test credentials are not permission to impersonate senders.",
+      "source_urls": [
+        "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API064",
+      "name": "Cloudflare R2",
+      "category": "Storage and media",
+      "benefit": "Store files and objects using an S3-compatible interface.",
+      "setup_entry_url": "https://developers.cloudflare.com/r2/pricing/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Activate R2 under the approved account, review its billing enrollment, create a bucket and scoped S3 credentials.",
+        "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Scoped API token and account/resource ID, or a Workers binding; storage may use scoped S3 credentials.",
+      "caveat": "Free storage does not make all operations or storage classes free. Bucket privacy and signed access need explicit configuration.",
+      "source_urls": [
+        "https://developers.cloudflare.com/r2/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API065",
+      "name": "Firebase Cloud Storage",
+      "category": "Storage and media",
+      "benefit": "Store user uploads and application media with Firebase access controls.",
+      "setup_entry_url": "https://firebase.google.com/docs/storage/faqs-storage-changes-announced-sept-2024",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Approve Blaze billing, create/select the bucket and region, and deploy restrictive storage rules.",
+        "Install the platform SDK, configure secure rules or server permissions, register device/app details and perform a controlled feature test.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Firebase app configuration plus appropriate SDK identity, security rules and/or server service-account authorization.",
+      "caveat": "Signing into Firebase does not bypass billing. Existing Spark projects can receive 402/403 for bucket access.",
+      "source_urls": [
+        "https://firebase.google.com/docs/storage/faqs-storage-changes-announced-sept-2024"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API066",
+      "name": "Cloudinary",
+      "category": "Storage and media",
+      "benefit": "Upload, transform, optimize and deliver images or video.",
+      "setup_entry_url": "https://cloudinary.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a product environment, configure signed uploads and transformations, and keep the API secret server-side.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "A credit is a shared resource unit, not one image or one API call. Avoid unrestricted upload presets.",
+      "source_urls": [
+        "https://cloudinary.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API067",
+      "name": "ImageKit",
+      "category": "Storage and media",
+      "benefit": "Optimize media and provide responsive image/video delivery.",
+      "setup_entry_url": "https://imagekit.io/plans/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an account, configure origin/media library and signed uploads, and separate public from private keys.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Storage, delivery bandwidth and transformations are distinct. Public delivery URLs do not require exposing a private API key.",
+      "source_urls": [
+        "https://imagekit.io/plans/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API068",
+      "name": "Unsplash API",
+      "category": "Storage and media",
+      "benefit": "Search and display photographic images with creator metadata.",
+      "setup_entry_url": "https://unsplash.com/documentation",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Register an application, obtain an access key, implement attribution/download tracking and request production approval if needed.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Follow hotlinking and attribution rules. API access does not remove the conditions attached to the content.",
+      "source_urls": [
+        "https://unsplash.com/documentation"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API069",
+      "name": "Pixabay API",
+      "category": "Storage and media",
+      "benefit": "Search supported images, illustrations and videos.",
+      "setup_entry_url": "https://pixabay.com/api/docs/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Register for an API key and implement query caching and the required image/video usage conditions.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Avoid bulk mirroring and redistributing a competing library. Review each content type and licensing restriction.",
+      "source_urls": [
+        "https://pixabay.com/api/docs/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API070",
+      "name": "Openverse API",
+      "category": "Storage and media",
+      "benefit": "Discover images and audio with open-license metadata.",
+      "setup_entry_url": "https://docs.openverse.org/api/reference/authentication_and_throttling.html",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose anonymous access or register an OAuth client for higher limits, and preserve each result's license/attribution.",
+        "Use one explicit access path; do not mix anonymous and authenticated quota assumptions.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No secret on the public path; optional provider token or application identification where documented.",
+      "caveat": "An open-search result is not automatically cleared for all commercial uses. Inspect the individual license and source.",
+      "source_urls": [
+        "https://docs.openverse.org/api/reference/authentication_and_throttling.html"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API071",
+      "name": "Pexels API",
+      "category": "Storage and media",
+      "benefit": "Search photo and video assets for supported application experiences.",
+      "setup_entry_url": "https://www.pexels.com/api/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Use the API registration flow, describe the application, obtain the key if approved and implement attribution.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Actual account issuance was not tested. The API must not be used to copy the core Pexels library or unsupported wallpaper-app functionality.",
+      "source_urls": [
+        "https://www.pexels.com/api/",
+        "https://www.pexels.com/onboarding/",
+        "https://www.pexels.com/api/documentation/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API072",
+      "name": "Geoapify",
+      "category": "Maps and geolocation",
+      "benefit": "Add geocoding, routes, places and mapping functions.",
+      "setup_entry_url": "https://www.geoapify.com/pricing/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a project/API key, select the needed APIs and configure key restrictions and attribution.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Credits are not identical to requests across every operation. Verify commercial and attribution terms for your exact use.",
+      "source_urls": [
+        "https://www.geoapify.com/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API073",
+      "name": "LocationIQ",
+      "category": "Maps and geolocation",
+      "benefit": "Convert addresses to coordinates and coordinates to addresses.",
+      "setup_entry_url": "https://locationiq.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an access token, restrict allowed use and include the required attribution for eligible free commercial use.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Check commercial eligibility and caching rights. Address services are not a complete ride-dispatch backend.",
+      "source_urls": [
+        "https://locationiq.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API074",
+      "name": "Nominatim - OSM public server",
+      "category": "Maps and geolocation",
+      "benefit": "Perform low-volume address search against OpenStreetMap data.",
+      "setup_entry_url": "https://operations.osmfoundation.org/policies/nominatim/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Set an identifying User-Agent/contact, use caching and throttle centrally to the service policy.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Do not use the public server for mass geocoding or client-side autocomplete. Open data does not imply unlimited hosted infrastructure.",
+      "source_urls": [
+        "https://operations.osmfoundation.org/policies/nominatim/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API075",
+      "name": "TomTom Maps APIs",
+      "category": "Maps and geolocation",
+      "benefit": "Use maps, routing, geocoding and traffic data.",
+      "setup_entry_url": "https://docs.tomtom.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a developer application/key and select the routing, mapping or geocoding product required.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Separate tile requests from route and search requests. Region coverage and data permissions need product-level review.",
+      "source_urls": [
+        "https://docs.tomtom.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API076",
+      "name": "Google Maps Platform",
+      "category": "Maps and geolocation",
+      "benefit": "Add maps, routes, places and distance-related functions to an application.",
+      "setup_entry_url": "https://developers.google.com/maps/billing-and-pricing/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create/select a project, enable only the specific Maps APIs, approve billing and restrict keys by API and app/server.",
+        "Configure the correct credential type, restrict keys where supported, separate projects/environments and test the exact product/SKU.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "API key for supported products, or service account / OAuth / application-default credentials as documented.",
+      "caveat": "One Google account does not enable Maps automatically. Attribution, caching and billing rules vary by service.",
+      "source_urls": [
+        "https://developers.google.com/maps/billing-and-pricing/pricing",
+        "https://mapsplatform.google.com/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API077",
+      "name": "Mapbox APIs",
+      "category": "Maps and geolocation",
+      "benefit": "Build styled maps, search and navigation experiences.",
+      "setup_entry_url": "https://www.mapbox.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the account/token, select SDKs or APIs, and restrict scopes and allowed URLs where supported.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Do not apply a map-display allowance to Directions, Search or Navigation. Tokens need appropriate restrictions.",
+      "source_urls": [
+        "https://www.mapbox.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API078",
+      "name": "GeoNames",
+      "category": "Maps and geolocation",
+      "benefit": "Look up place names and geographic reference data.",
+      "setup_entry_url": "https://www.geonames.org/export/web-services.html",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Register a GeoNames username and enable free web-service access in account settings.",
+        "Pass the correct username, cache results and monitor the shared account credit limit.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Registered username; not necessarily a secret bearer token.",
+      "caveat": "A username is not a private bearer secret, but usage still belongs to your account and can be exhausted.",
+      "source_urls": [
+        "https://www.geonames.org/export/web-services.html"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API079",
+      "name": "IPinfo Lite",
+      "category": "Maps and geolocation",
+      "benefit": "Enrich an IP address with basic network/country information.",
+      "setup_entry_url": "https://ipinfo.io/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Lite account/token and use only the endpoint and fields included in that plan.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "IP geolocation is approximate and is not phone GPS. Do not assume premium fields are part of Lite.",
+      "source_urls": [
+        "https://ipinfo.io/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API080",
+      "name": "REST Countries",
+      "category": "Maps and geolocation",
+      "benefit": "Retrieve country names, codes, languages, currencies and related reference fields.",
+      "setup_entry_url": "https://restcountries.com/plans",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Confirm the current API version and plan, create the required key, and cache slowly changing country data.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Do not hardcode an obsolete unauthenticated route into a new project without testing it.",
+      "source_urls": [
+        "https://restcountries.com/plans",
+        "https://restcountries.com/docs/countries/api-versions",
+        "https://restcountries.com/docs/countries"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API081",
+      "name": "ipify",
+      "category": "Maps and geolocation",
+      "benefit": "Return the public IPv4/IPv6 address visible to the service.",
+      "setup_entry_url": "https://www.ipify.org/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose the IPv4 or IPv6 endpoint and parse its text or JSON response.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "The reported IP may be a NAT, proxy or VPN egress address. It is not the user's precise location.",
+      "source_urls": [
+        "https://www.ipify.org/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API082",
+      "name": "OpenCage Free Trial",
+      "category": "Maps and geolocation",
+      "benefit": "Evaluate forward and reverse geocoding.",
+      "setup_entry_url": "https://opencagedata.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a trial account/key and review production licensing before publishing the feature.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Daily trial headroom does not imply permission to run a commercial app indefinitely without a paid plan.",
+      "source_urls": [
+        "https://opencagedata.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API083",
+      "name": "Open-Meteo",
+      "category": "Weather and environment",
+      "benefit": "Retrieve weather forecasts and supported historical or environmental datasets.",
+      "setup_entry_url": "https://open-meteo.com/en/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Select the variables and location, read the hosted-use policy, and cache requests appropriately.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "The software/data licensing and the free hosted-service conditions are distinct. A commercial app needs the appropriate access path.",
+      "source_urls": [
+        "https://open-meteo.com/en/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API084",
+      "name": "OpenWeather",
+      "category": "Weather and environment",
+      "benefit": "Display current conditions and selected forecast products.",
+      "setup_entry_url": "https://openweathermap.org/price",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create the account/key, activate the intended product and confirm whether its plan requires separate billing.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "A key may need provider-side activation. One Call and standard weather endpoints do not share identical pricing.",
+      "source_urls": [
+        "https://openweathermap.org/price"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API085",
+      "name": "WeatherAPI.com",
+      "category": "Weather and environment",
+      "benefit": "Add weather, forecasts and related location data to an application.",
+      "setup_entry_url": "https://www.weatherapi.com/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Register for a free key and choose fields and forecast days available in the plan.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Historical data and longer forecasts can require another plan. Verify the commercial-use conditions before release.",
+      "source_urls": [
+        "https://www.weatherapi.com/",
+        "https://www.weatherapi.com/pricing.aspx"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API086",
+      "name": "OpenAQ API v3",
+      "category": "Weather and environment",
+      "benefit": "Read air-quality observations and station metadata.",
+      "setup_entry_url": "https://docs.openaq.org/using-the-api/api-key",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create an OpenAQ key and use the v3 endpoints, filters and pagination.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Station coverage and reporting delay vary. Data is not a substitute for a guaranteed personal exposure measurement.",
+      "source_urls": [
+        "https://docs.openaq.org/using-the-api/api-key"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API087",
+      "name": "Tomorrow.io",
+      "category": "Weather and environment",
+      "benefit": "Add weather conditions and forecasts to location-aware applications.",
+      "setup_entry_url": "https://support.tomorrow.io/hc/en-us/articles/20273728362644-Free-API-Plan-Rate-Limits",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a free key and choose the weather fields allowed by the plan.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "The hourly limit can bind before the daily allowance. Premium datasets may not be included.",
+      "source_urls": [
+        "https://support.tomorrow.io/hc/en-us/articles/20273728362644-Free-API-Plan-Rate-Limits"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API088",
+      "name": "Frankfurter API",
+      "category": "Currencies and finance data",
+      "benefit": "Convert reference currency values and retrieve historical rates.",
+      "setup_entry_url": "https://frankfurter.dev/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose the base/quote currencies and date, validate supported currencies and cache daily values.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Reference rates are not live executable trading prices or the rate of every Egyptian bank.",
+      "source_urls": [
+        "https://frankfurter.dev/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API089",
+      "name": "ExchangeRate-API Open",
+      "category": "Currencies and finance data",
+      "benefit": "Use periodically updated currency conversion tables.",
+      "setup_entry_url": "https://www.exchangerate-api.com/docs/free",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Use the Open Access endpoint, cache daily data and show the required attribution.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Do not redistribute the source dataset contrary to its terms. Daily rates are not transaction quotes.",
+      "source_urls": [
+        "https://www.exchangerate-api.com/docs/free"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API090",
+      "name": "CoinGecko Demo API",
+      "category": "Currencies and finance data",
+      "benefit": "Read cryptocurrency prices and market metadata for a prototype.",
+      "setup_entry_url": "https://www.coingecko.com/en/api/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Demo key, use the Demo endpoint/header and comply with attribution/license conditions.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Freshness, redistribution and commercial data licensing require review. This is data access, not investment advice or exchange execution.",
+      "source_urls": [
+        "https://www.coingecko.com/en/api/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API091",
+      "name": "Alpha Vantage",
+      "category": "Currencies and finance data",
+      "benefit": "Retrieve selected market time series and technical indicator data.",
+      "setup_entry_url": "https://www.alphavantage.co/support/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Request a free key and choose an endpoint and market dataset actually included in the plan.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Real-time, premium and licensed exchange data can be excluded. A free key does not unlock every endpoint.",
+      "source_urls": [
+        "https://www.alphavantage.co/support/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API092",
+      "name": "Twelve Data Basic",
+      "category": "Currencies and finance data",
+      "benefit": "Prototype financial market data queries and indicators.",
+      "setup_entry_url": "https://twelvedata.com/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Basic key, inspect the credits consumed by each operation and check display/commercial rights.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Do not assume a free development plan permits redistribution or a customer-facing real-time market feed.",
+      "source_urls": [
+        "https://twelvedata.com/pricing"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API093",
+      "name": "Stripe Sandbox",
+      "category": "Currencies and finance data",
+      "benefit": "Test payment flows, webhooks and failure handling without moving real money.",
+      "setup_entry_url": "https://docs.stripe.com/sandboxes",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a sandbox, use test keys/cards and verify webhook signatures; separate all test and live configurations.",
+        "Keep test/live keys and webhooks separate; use synthetic test data, not real payment details.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Sandbox/test keys and test webhook signing secrets.",
+      "caveat": "Successful simulation does not prove live merchant eligibility in Egypt or another jurisdiction. Never present test payments as settled funds.",
+      "source_urls": [
+        "https://docs.stripe.com/sandboxes"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API094",
+      "name": "GitHub REST API",
+      "category": "Developer and workspace integrations",
+      "benefit": "Read repository metadata and automate issues, pull requests and releases with appropriate permissions.",
+      "setup_entry_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Use public read access where sufficient; otherwise create a fine-grained token or GitHub App restricted to the required repositories.",
+        "Use one explicit access path; do not mix anonymous and authenticated quota assumptions.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No secret on the public path; optional provider token or application identification where documented.",
+      "caveat": "Reading public repositories is different from write authorization. GitHub Models retirement does not retire this API.",
+      "source_urls": [
+        "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API095",
+      "name": "Google Sheets API",
+      "category": "Developer and workspace integrations",
+      "benefit": "Read/write spreadsheet data and automate reports with owner-authorized access.",
+      "setup_entry_url": "https://console.cloud.google.com/apis/library/sheets.googleapis.com",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Enable Sheets, configure an OAuth client and scopes, then obtain consent; alternatively share only designated files with an authorized service account.",
+        "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "OAuth client ID/configuration and short-lived access tokens; refresh tokens kept securely. Service accounts only with explicitly granted access or valid admin delegation.",
+      "caveat": "A Google login does not grant access to every spreadsheet. Enabling the API and granting access to a particular file are separate steps.",
+      "source_urls": [
+        "https://developers.google.com/workspace/sheets/api/quickstart/python",
+        "https://developers.google.com/workspace/sheets/api/limits"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API096",
+      "name": "Google Docs API",
+      "category": "Developer and workspace integrations",
+      "benefit": "Create and modify native documents programmatically.",
+      "setup_entry_url": "https://console.cloud.google.com/apis/library/docs.googleapis.com",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Enable Docs, configure the OAuth app and minimum scopes, and obtain access to the intended document.",
+        "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "OAuth client ID/configuration and short-lived access tokens; refresh tokens kept securely. Service accounts only with explicitly granted access or valid admin delegation.",
+      "caveat": "Creating a credential does not automatically grant permission to existing user documents.",
+      "source_urls": [
+        "https://developers.google.com/workspace/docs/api/limits"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API097",
+      "name": "Google Drive API",
+      "category": "Developer and workspace integrations",
+      "benefit": "List, upload, organize and share files under an authorized identity.",
+      "setup_entry_url": "https://console.cloud.google.com/apis/library/drive.googleapis.com",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Enable Drive, select narrow file scopes and configure OAuth consent or explicitly shared service-account resources.",
+        "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "OAuth client ID/configuration and short-lived access tokens; refresh tokens kept securely. Service accounts only with explicitly granted access or valid admin delegation.",
+      "caveat": "Prefer file-scoped access when suitable. Drive API permission does not imply access to Gmail or Calendar.",
+      "source_urls": [
+        "https://developers.google.com/workspace/drive/api/guides/limits"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API098",
+      "name": "Google Calendar API",
+      "category": "Developer and workspace integrations",
+      "benefit": "Read availability and manage events on calendars the identity can access.",
+      "setup_entry_url": "https://console.cloud.google.com/apis/library/calendar-json.googleapis.com",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Enable Calendar, configure scopes, and obtain user consent or explicit calendar sharing for a service account.",
+        "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "OAuth client ID/configuration and short-lived access tokens; refresh tokens kept securely. Service accounts only with explicitly granted access or valid admin delegation.",
+      "caveat": "Calendar read and write permissions differ. Invitations or event changes are consequential actions and must be authorized.",
+      "source_urls": [
+        "https://developers.google.com/workspace/calendar/api/guides/quota"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API099",
+      "name": "Gmail API",
+      "category": "Developer and workspace integrations",
+      "benefit": "Read or send email and manage labels with the mailbox owner's permission.",
+      "setup_entry_url": "https://console.cloud.google.com/apis/library/gmail.googleapis.com",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Enable Gmail, configure the OAuth consent screen and appropriate client, then request only the required mailbox scopes.",
+        "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "OAuth client ID/configuration and short-lived access tokens; refresh tokens kept securely. Service accounts only with explicitly granted access or valid admin delegation.",
+      "caveat": "A standard service account cannot silently read a personal Gmail mailbox. Workspace domain-wide delegation requires administrator approval.",
+      "source_urls": [
+        "https://developers.google.com/workspace/gmail/api/quickstart/python",
+        "https://developers.google.com/workspace/gmail/api/reference/quota"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API100",
+      "name": "YouTube Data API",
+      "category": "Developer and workspace integrations",
+      "benefit": "Read video/channel metadata and perform authorized channel-management operations.",
+      "setup_entry_url": "https://console.cloud.google.com/apis/library/youtube.googleapis.com",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Enable YouTube Data; use a restricted API key for eligible public reads and OAuth consent for private data or channel writes.",
+        "Keep public reads separate from private writes, use minimal scopes and account for method-specific quota costs.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "API key for eligible public data; OAuth 2.0 for user-specific or write operations.",
+      "caveat": "API access does not grant video redistribution rights. Upload or channel changes need the channel owner's authorization.",
+      "source_urls": [
+        "https://developers.google.com/youtube/v3/getting-started",
+        "https://developers.google.com/youtube/v3/guides/quota_and_compliance_audits"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API101",
+      "name": "Google Books API",
+      "category": "Developer and workspace integrations",
+      "benefit": "Find book metadata, covers and supported previews.",
+      "setup_entry_url": "https://console.cloud.google.com/apis/library/books.googleapis.com",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a project/key for quota-controlled public lookup; add OAuth only for user-specific library operations.",
+        "Keep public reads separate from private writes, use minimal scopes and account for method-specific quota costs.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "API key for eligible public data; OAuth 2.0 for user-specific or write operations.",
+      "caveat": "Book metadata is not a license to redistribute the full book. A user's library requires separate consent.",
+      "source_urls": [
+        "https://developers.google.com/books/docs/v1/using"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API102",
+      "name": "JSONPlaceholder",
+      "category": "Testing and educational APIs",
+      "benefit": "Prototype lists, users and HTTP CRUD interactions without building a backend.",
+      "setup_entry_url": "https://jsonplaceholder.typicode.com/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Call a sample read endpoint and treat POST/PUT/DELETE responses as demonstrations.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Never use it as the database for real customer records or assume test writes persist.",
+      "source_urls": [
+        "https://jsonplaceholder.typicode.com/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API103",
+      "name": "DummyJSON",
+      "category": "Testing and educational APIs",
+      "benefit": "Build product, cart and user interfaces with realistic sample structures.",
+      "setup_entry_url": "https://dummyjson.com/docs",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose the dataset and pagination parameters, and keep sample authentication separate from production identity.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Products, users and credentials are demonstration data, not a production store or authentication service.",
+      "source_urls": [
+        "https://dummyjson.com/docs",
+        "https://dummyjson.com/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API104",
+      "name": "Random User Generator",
+      "category": "Testing and educational APIs",
+      "benefit": "Populate UI prototypes with synthetic-looking user records.",
+      "setup_entry_url": "https://randomuser.me/documentation",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Request a bounded number of test records and label them as sample data in demonstrations.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Do not present generated identities as verified real customers or accounts.",
+      "source_urls": [
+        "https://randomuser.me/documentation"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API105",
+      "name": "httpbin",
+      "category": "Testing and educational APIs",
+      "benefit": "Inspect HTTP requests, headers, redirects and status-code handling.",
+      "setup_entry_url": "https://httpbin.org/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Use a small request to the method/status endpoint you are testing.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Never send production secrets to a public echo service. Its purpose is protocol testing, not credential validation.",
+      "source_urls": [
+        "https://httpbin.org/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API106",
+      "name": "PokeAPI",
+      "category": "Testing and educational APIs",
+      "benefit": "Explore a structured dataset while learning REST or building fan-oriented prototypes.",
+      "setup_entry_url": "https://pokeapi.co/docs/v2",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Read the resource schema and cache frequently requested reference records.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Dataset availability does not grant ownership of Pokemon trademarks, artwork or game rights.",
+      "source_urls": [
+        "https://pokeapi.co/docs/v2"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API107",
+      "name": "Open Trivia DB",
+      "category": "Testing and educational APIs",
+      "benefit": "Retrieve categorized quiz questions for an educational prototype.",
+      "setup_entry_url": "https://opentdb.com/api_config.php",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Select a category/difficulty and decode content according to the documented response format.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Review the content license and prevent repeated fetching when a cached question set is sufficient.",
+      "source_urls": [
+        "https://opentdb.com/api_config.php"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API108",
+      "name": "Free Dictionary API",
+      "category": "Testing and educational APIs",
+      "benefit": "Display supported English definitions, pronunciations and example usage.",
+      "setup_entry_url": "https://dictionaryapi.dev/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Query a supported language/word and handle missing entries gracefully.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Not every word, language or pronunciation will be present. Check the returned audio/content license.",
+      "source_urls": [
+        "https://dictionaryapi.dev/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API109",
+      "name": "Datamuse",
+      "category": "Testing and educational APIs",
+      "benefit": "Find related words, rhymes and suggestions for writing or word games.",
+      "setup_entry_url": "https://www.datamuse.com/api/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose the word relationship parameters and implement caching/rate limits.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Do not turn a dated access policy into a permanent promise. It is a lexical helper, not a general LLM.",
+      "source_urls": [
+        "https://www.datamuse.com/api/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API110",
+      "name": "Crossref REST API",
+      "category": "Research and public datasets",
+      "benefit": "Resolve DOI metadata and build reference or citation workflows.",
+      "setup_entry_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Query works/DOIs, provide an application identity/contact and use cursor pagination for large results.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Metadata availability does not imply full-text article access or permission to redistribute paywalled papers.",
+      "source_urls": [
+        "https://www.crossref.org/documentation/retrieve-metadata/rest-api/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API111",
+      "name": "OpenAlex API",
+      "category": "Research and public datasets",
+      "benefit": "Analyze scholarly works, authors, institutions and citation relationships.",
+      "setup_entry_url": "https://openalex.org/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Register for a key, choose the needed fields and paginate/filter to reduce unnecessary cost.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Large exports and expensive endpoints may consume the allowance quickly. Verify source coverage and record matching.",
+      "source_urls": [
+        "https://openalex.org/pricing",
+        "https://help.openalex.org/api/authentication/",
+        "https://help.openalex.org/access/pricing/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API112",
+      "name": "NASA Open APIs",
+      "category": "Research and public datasets",
+      "benefit": "Build educational astronomy, image or space-data features.",
+      "setup_entry_url": "https://api.nasa.gov/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Request a NASA API key and select the individual service and its data schema.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Different NASA services have different update cycles, data caveats and occasional availability constraints.",
+      "source_urls": [
+        "https://api.nasa.gov/",
+        "https://api.nasa.gov/assets/html/authentication.html"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API113",
+      "name": "World Bank Indicators API",
+      "category": "Research and public datasets",
+      "benefit": "Retrieve country-level economic, demographic and development indicators.",
+      "setup_entry_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose indicator/country/date parameters and preserve the metadata and units.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Historical annual indicators are not current live measurements. Compare series only after checking definitions and revisions.",
+      "source_urls": [
+        "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API114",
+      "name": "Open Library APIs",
+      "category": "Research and public datasets",
+      "benefit": "Retrieve book, edition, author and cover metadata.",
+      "setup_entry_url": "https://openlibrary.org/developers/api",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose search/edition endpoints, identify the application and cache book metadata.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Metadata is not full-book access. Follow rate policy and use bulk exports rather than overwhelming the API.",
+      "source_urls": [
+        "https://openlibrary.org/developers/api"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API115",
+      "name": "USGS Earthquake API",
+      "category": "Research and public datasets",
+      "benefit": "Query earthquake events by place, time, magnitude and depth.",
+      "setup_entry_url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Set a bounded time window, location filters and response format.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "A catalog is not earthquake prediction or a guaranteed emergency-alert service. Event data can be revised.",
+      "source_urls": [
+        "https://earthquake.usgs.gov/fdsnws/event/1/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API116",
+      "name": "USDA FoodData Central",
+      "category": "Research and public datasets",
+      "benefit": "Search food records and nutrient data for an application.",
+      "setup_entry_url": "https://fdc.nal.usda.gov/api-guide/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Request the data.gov key, choose food types and preserve nutrient units and serving context.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Different foods and data types are not interchangeable. Nutrition records do not provide individualized medical advice.",
+      "source_urls": [
+        "https://fdc.nal.usda.gov/api-guide/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API117",
+      "name": "NHTSA vPIC",
+      "category": "Research and public datasets",
+      "benefit": "Decode VINs and retrieve manufacturer or vehicle reference information.",
+      "setup_entry_url": "https://vpic.nhtsa.dot.gov/api/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose a VIN/manufacturer operation and validate the country/model-year context.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "This is not a complete parts catalog, vehicle accident history, proof of ownership or guaranteed global model coverage.",
+      "source_urls": [
+        "https://vpic.nhtsa.dot.gov/api/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API118",
+      "name": "TMDB API",
+      "category": "Media, news and specialist data",
+      "benefit": "Build film/TV metadata, poster and cast discovery interfaces.",
+      "setup_entry_url": "https://developer.themoviedb.org/docs/faq",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Register the application, obtain its key/token and implement required attribution.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "The API does not grant film-streaming rights. Check poster and metadata licensing for the intended commercial product.",
+      "source_urls": [
+        "https://developer.themoviedb.org/docs/faq"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API119",
+      "name": "TVmaze API",
+      "category": "Media, news and specialist data",
+      "benefit": "Retrieve television series, episode and schedule metadata.",
+      "setup_entry_url": "https://www.tvmaze.com/api",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Query series/episode data and preserve attribution and relevant share-alike conditions.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Schedules can change. Metadata access is not access to copyrighted episode video.",
+      "source_urls": [
+        "https://www.tvmaze.com/api"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API120",
+      "name": "football-data.org",
+      "category": "Media, news and specialist data",
+      "benefit": "Display covered fixtures, standings and teams.",
+      "setup_entry_url": "https://www.football-data.org/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a token and check that the required competition and fields belong to the free plan.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "Do not advertise universal league coverage or live timing without checking the account's data entitlement.",
+      "source_urls": [
+        "https://www.football-data.org/pricing",
+        "https://www.football-data.org/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API121",
+      "name": "Open Food Facts",
+      "category": "Media, news and specialist data",
+      "benefit": "Look up community food product data by barcode.",
+      "setup_entry_url": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Use identified public reads and caching; create an authorized account only for deliberate product edits.",
+        "Separate read/write endpoints, identify the application, honor limits and preserve attribution/license obligations.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No read secret where permitted; write credentials are separate.",
+      "caveat": "Community data can be missing or inaccurate. Preserve license/attribution and do not use it as a safety guarantee.",
+      "source_urls": [
+        "https://openfoodfacts.github.io/openfoodfacts-server/api/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API122",
+      "name": "Currents News API",
+      "category": "Media, news and specialist data",
+      "benefit": "Retrieve headlines and news-search metadata for a prototype.",
+      "setup_entry_url": "https://currentsapi.services/en",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a key and choose permitted language/search filters.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "API access does not automatically license republishing full articles, photographs or publisher content.",
+      "source_urls": [
+        "https://currentsapi.services/en"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API123",
+      "name": "NewsAPI Developer",
+      "category": "Media, news and specialist data",
+      "benefit": "Prototype news-headline search during development.",
+      "setup_entry_url": "https://newsapi.org/pricing",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Create a Developer key and keep it limited to an allowed development environment.",
+        "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Provider-issued API key/token, resource credential or SDK credential; confirm the exact product.",
+      "caveat": "An internal production dashboard is still production. Obtain the appropriate plan before deployment.",
+      "source_urls": [
+        "https://newsapi.org/pricing",
+        "https://newsapi.org/terms"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API124",
+      "name": "AlAdhan API",
+      "category": "Islamic reference services",
+      "benefit": "Calculate prayer times for a chosen location and date.",
+      "setup_entry_url": "https://aladhan.com/prayer-times-api",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Set coordinates/city, date, timezone and calculation method explicitly.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Different calculation methods and local calendars can disagree. Validate the intended local convention before publishing times.",
+      "source_urls": [
+        "https://aladhan.com/prayer-times-api"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API125",
+      "name": "AlQuran Cloud API",
+      "category": "Islamic reference services",
+      "benefit": "Retrieve Quran verses, surahs and supported editions/translations.",
+      "setup_entry_url": "https://alquran.cloud/api",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Choose and pin the edition/translation identifier and validate verse references.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "Review translation provenance and audio/content rights. Do not treat every edition as equivalent.",
+      "source_urls": [
+        "https://alquran.cloud/api"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API126",
+      "name": "MP3Quran API",
+      "category": "Islamic reference services",
+      "benefit": "Find reciters, recitations and documented audio URLs.",
+      "setup_entry_url": "https://www.mp3quran.net/ar/api",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Select a documented reciter/riwayah and use the API's current stream/file references.",
+        "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "No API secret for this public access path; some services require a descriptive User-Agent or attribution.",
+      "caveat": "A publicly accessible recording URL is not automatically permission to resell or rehost the recording.",
+      "source_urls": [
+        "https://www.mp3quran.net/ar/api"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API127",
+      "name": "Ollama Local API",
+      "category": "Self-hosted software",
+      "benefit": "Run compatible language models locally and expose a local API.",
+      "setup_entry_url": "https://docs.ollama.com/api/introduction",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Install Ollama, download a hardware-appropriate local model, disable cloud routing when required, and protect the local server.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Local installation is manual. A cloud model selected through a local client is not local-only inference.",
+      "source_urls": [
+        "https://docs.ollama.com/api/introduction"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API128",
+      "name": "LibreTranslate Self-hosted",
+      "category": "Self-hosted software",
+      "benefit": "Operate your own text-translation service using supported installed language models.",
+      "setup_entry_url": "https://docs.libretranslate.com/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Install the project, select language models, configure API-key enforcement and place it behind authenticated HTTPS.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Translation quality and language coverage depend on installed models. Review the software/model license before commercial deployment.",
+      "source_urls": [
+        "https://docs.libretranslate.com/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API129",
+      "name": "PocketBase",
+      "category": "Self-hosted software",
+      "benefit": "Build a lightweight backend with accounts, records, files and realtime updates.",
+      "setup_entry_url": "https://pocketbase.io/docs/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Install the server, define collections/rules, create admin credentials and configure HTTPS/backups.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Review current version/migration guidance before critical production use. A local demo is not hardened deployment.",
+      "source_urls": [
+        "https://pocketbase.io/docs/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API130",
+      "name": "LocalAI",
+      "category": "Self-hosted software",
+      "benefit": "Expose compatible AI inference APIs backed by models you operate.",
+      "setup_entry_url": "https://localai.io/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Install LocalAI, configure a supported backend/model, set API authentication and test locally before exposing it.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "The API surface does not guarantee every model supports tools, vision, speech or all response formats.",
+      "source_urls": [
+        "https://localai.io/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API131",
+      "name": "whisper.cpp Server",
+      "category": "Self-hosted software",
+      "benefit": "Transcribe speech using a local Whisper model and HTTP server.",
+      "setup_entry_url": "https://raw.githubusercontent.com/ggml-org/whisper.cpp/master/examples/server/README.md",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Build/install whisper.cpp, download the chosen model, configure server authentication through a proxy and validate accepted audio formats.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Latency and language accuracy must be measured on the actual hardware. Do not promise real-time throughput from software availability alone.",
+      "source_urls": [
+        "https://raw.githubusercontent.com/ggml-org/whisper.cpp/master/examples/server/README.md"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API132",
+      "name": "Kokoro-FastAPI",
+      "category": "Self-hosted software",
+      "benefit": "Expose supported local text-to-speech generation through an API.",
+      "setup_entry_url": "https://github.com/remsky/Kokoro-FastAPI",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Install the compatible runtime/model, review available voices/languages and protect the server endpoint.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Do not assume Arabic or a particular voice is supported. Verify both model and voice rights.",
+      "source_urls": [
+        "https://github.com/remsky/Kokoro-FastAPI"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API133",
+      "name": "ComfyUI Local Server",
+      "category": "Self-hosted software",
+      "benefit": "Execute local image/video workflows and connect them to an application.",
+      "setup_entry_url": "https://github.com/Comfy-Org/ComfyUI",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Install ComfyUI and audited model/node dependencies, build a workflow, then expose only a protected backend integration.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Custom nodes execute code and need review. A workflow may call paid external services despite a free local interface.",
+      "source_urls": [
+        "https://github.com/Comfy-Org/ComfyUI"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API134",
+      "name": "Qdrant Self-hosted",
+      "category": "Self-hosted software",
+      "benefit": "Operate your own vector store for search and RAG.",
+      "setup_entry_url": "https://qdrant.tech/documentation/quickstart/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Deploy Qdrant, create protected storage/collections and configure keys, TLS and backups.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Local cluster sizing and high availability are your responsibility; do not expose an unauthenticated database publicly.",
+      "source_urls": [
+        "https://qdrant.tech/documentation/quickstart/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API135",
+      "name": "Chroma Self-hosted",
+      "category": "Self-hosted software",
+      "benefit": "Store embeddings and retrieve relevant document chunks in a controlled environment.",
+      "setup_entry_url": "https://docs.trychroma.com/docs/overview/introduction",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Install the required deployment mode, persist data and enforce server access control before network exposure.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "A prototype persistence directory is not a complete production backup or access-control strategy.",
+      "source_urls": [
+        "https://docs.trychroma.com/docs/overview/introduction"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API136",
+      "name": "Meilisearch Self-hosted",
+      "category": "Self-hosted software",
+      "benefit": "Provide typo-tolerant search and filters over application data.",
+      "setup_entry_url": "https://www.meilisearch.com/docs/resources/self_hosting/getting_started/quick_start",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Install the server, protect the master key, define index settings and expose only scoped search credentials.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Indexing and search keys have different privileges. Check memory/storage demands and backup procedures.",
+      "source_urls": [
+        "https://www.meilisearch.com/docs/resources/self_hosting/getting_started/quick_start"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API137",
+      "name": "Typesense Self-hosted",
+      "category": "Self-hosted software",
+      "benefit": "Build fast faceted search over product or document collections.",
+      "setup_entry_url": "https://typesense.org/docs/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Deploy Typesense, configure schemas and restricted search-only keys, and set up snapshots/backups.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Do not expose administrative API keys through the client. Cluster reliability requires deliberate deployment design.",
+      "source_urls": [
+        "https://typesense.org/docs/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    },
+    {
+      "service_id": "API138",
+      "name": "Keycloak",
+      "category": "Self-hosted software",
+      "benefit": "Operate identity, SSO and OAuth/OIDC services under your control.",
+      "setup_entry_url": "https://www.keycloak.org/",
+      "activation_steps": [
+        "Confirm the official product, allowed purpose, current plan and relevant region.",
+        "Deploy a production database and Keycloak, create a realm/client, configure HTTPS/redirects and set administrative access.",
+        "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+        "Run one minimal, non-sensitive test after authorization; inspect status, usage units and any charge before broader use."
+      ],
+      "credential": "Local administrator/API credentials that you configure; model/download tokens only when required by the source.",
+      "caveat": "Federating Google login is optional and separately configured. Running an identity server creates security and recovery obligations.",
+      "source_urls": [
+        "https://www.keycloak.org/"
+      ],
+      "last_consolidated_on": "2026-10-15",
+      "nexus_mode": "Integration guide"
+    }
+  ]
+}
