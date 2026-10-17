@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.19 — 17 October 2026
+
+Pooled GPU inference, improved chat/project execution and tool evidence, 300-role selection improvements, revised onboarding, and expanded API activation documentation. [Full release notes](docs/RELEASE-0.6.19.md).
+
+# Changelog
+
 ## 0.6.13 — 2026-10-16
 
 Consolidates 0.6.7–0.6.13: Advanced API research, workspace intelligence and usage, redesigned Home and model comparison, Chat Studio and Mix, Store, Settings and connection management. Includes all 138 API profiles and 16 chat presets. [Release notes](docs/RELEASE-0.6.13.md).

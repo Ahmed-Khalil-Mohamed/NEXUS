@@ -1,7 +1,138 @@
 {
   "snapshot_date": "2026-10-15",
+  "documentation_updated": "2026-10-17",
   "service_count": 138,
   "scope": "Research guidance, not live account verification or universal API support. No user credentials included.",
+  "provider_presets": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "baseUrl": "https://api.openai.com/v1",
+      "docs": "https://platform.openai.com/docs/api-reference",
+      "protocol": "openai",
+      "logo": "/brands/openai.svg"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "baseUrl": "https://api.anthropic.com/v1",
+      "docs": "https://platform.claude.com/docs/en/api/overview",
+      "protocol": "anthropic",
+      "logo": "/brands/anthropic.svg"
+    },
+    {
+      "id": "google",
+      "name": "Google Gemini",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "docs": "https://ai.google.dev/gemini-api/docs/openai",
+      "protocol": "openai",
+      "logo": "/brands/google.svg"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft Azure",
+      "baseUrl": "",
+      "docs": "https://learn.microsoft.com/en-us/azure/developer/ai/how-to/switching-endpoints",
+      "protocol": "openai",
+      "logo": "/brands/microsoft.svg"
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "docs": "https://docs.mistral.ai/api",
+      "protocol": "openai",
+      "logo": "/brands/mistral.svg"
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "baseUrl": "https://api.x.ai/v1",
+      "docs": "https://docs.x.ai/developers/rest-api-reference",
+      "protocol": "openai",
+      "logo": "/brands/xai.svg"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "baseUrl": "https://api.deepseek.com/v1",
+      "docs": "https://api-docs.deepseek.com",
+      "protocol": "openai",
+      "logo": "/brands/deepseek.svg"
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "baseUrl": "https://api.cohere.ai/compatibility/v1",
+      "docs": "https://docs.cohere.com/docs/compatibility-api",
+      "protocol": "openai",
+      "logo": "/brands/cohere.svg"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "docs": "https://build.nvidia.com",
+      "protocol": "openai",
+      "logo": "/brands/nvidia.svg"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "baseUrl": "https://router.huggingface.co/v1",
+      "docs": "https://huggingface.co/docs/inference-providers/en/tasks/chat-completion",
+      "protocol": "openai",
+      "logo": "/brands/huggingface.svg"
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "docs": "https://console.groq.com/docs/openai",
+      "protocol": "openai",
+      "logo": "/brands/groq.svg"
+    },
+    {
+      "id": "together",
+      "name": "Together AI",
+      "baseUrl": "https://api.together.xyz/v1",
+      "docs": "https://docs.together.ai/docs/inference/openai-compatibility",
+      "protocol": "openai",
+      "logo": "/brands/together.svg"
+    },
+    {
+      "id": "fireworks",
+      "name": "Fireworks AI",
+      "baseUrl": "https://api.fireworks.ai/inference/v1",
+      "docs": "https://docs.fireworks.ai/tools-sdks/openai-compatibility",
+      "protocol": "openai",
+      "logo": "/brands/fireworks.svg"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "docs": "https://openrouter.ai/docs/api_reference/overview",
+      "protocol": "openai",
+      "logo": "/brands/openrouter.svg"
+    },
+    {
+      "id": "cerebras",
+      "name": "Cerebras",
+      "baseUrl": "https://api.cerebras.ai/v1",
+      "docs": "https://inference-docs.cerebras.ai/quickstart",
+      "protocol": "openai",
+      "logo": "/brands/cerebras.svg"
+    },
+    {
+      "id": "alibaba",
+      "name": "Alibaba Cloud / Qwen",
+      "baseUrl": "",
+      "docs": "https://www.alibabacloud.com/help/en/model-studio/compatibility-of-openai-with-dashscope",
+      "protocol": "openai",
+      "logo": "/brands/alibaba.svg"
+    }
+  ],
   "services": [
     {
       "service_id": "API001",
@@ -23,6 +154,9 @@
         "https://ai.google.dev/gemini-api/docs/rate-limits",
         "https://ai.google.dev/gemini-api/docs/openai"
       ],
+      "owner_account": "Google account with access to the selected AI Studio / Cloud project.",
+      "developer_action": "Use the intended project key on the backend and validate model, quota, key restrictions and one test response.",
+      "monitoring_details": "Record model usage metadata and the project/model quota context. Multiple keys in the same project do not create independent free allowances.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Chat connector"
     },
@@ -45,6 +179,9 @@
         "https://console.groq.com/docs/models",
         "https://console.groq.com/docs/openai"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Capture usage tokens when returned, remaining requests (daily), remaining tokens (per minute), resets and Retry-After. These are not monetary balances.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Chat connector"
     },
@@ -69,6 +206,9 @@
         "https://openrouter.ai/openrouter/free",
         "https://openrouter.ai/pricing/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "GET /api/v1/key documents key credit caps and usage. The rechecked schema does not document free_model_daily_requests; do not promise that counter. Missing values stay unknown.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Chat connector"
     },
@@ -90,6 +230,9 @@
         "https://docs.mistral.ai/admin/billing-usage/usage-limits",
         "https://docs.mistral.ai/api/endpoint/chat"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Chat connector"
     },
@@ -110,6 +253,9 @@
       "source_urls": [
         "https://developers.cloudflare.com/workers-ai/platform/pricing/"
       ],
+      "owner_account": "Cloudflare account and selected account ID.",
+      "developer_action": "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -131,6 +277,9 @@
         "https://developers.openai.com/api/docs/guides/moderation",
         "https://developers.openai.com/api/docs/models/omni-moderation-latest"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Count moderation attempts and outcomes separately from billed generation; do not equate a free moderation endpoint with unlimited throughput.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -151,6 +300,9 @@
       "source_urls": [
         "https://docs.cohere.com/docs/rate-limits"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Chat connector"
     },
@@ -171,6 +323,9 @@
       "source_urls": [
         "https://inference-docs.cerebras.ai/support/rate-limits"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Chat connector"
     },
@@ -192,6 +347,9 @@
         "https://huggingface.co/docs/inference-providers/en/pricing",
         "https://huggingface.co/docs/inference-providers/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Chat connector"
     },
@@ -213,6 +371,9 @@
         "https://docs.z.ai/guides/overview/pricing",
         "https://docs.z.ai/guides/overview/quick-start"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -234,6 +395,9 @@
         "https://www.aionlabs.ai/docs/rate-limits/",
         "https://www.aionlabs.ai/pricing/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -254,6 +418,9 @@
       "source_urls": [
         "https://kilo.ai/docs/gateway/authentication"
       ],
+      "owner_account": "No account for the eligible anonymous test path; provider account for other features.",
+      "developer_action": "Select an eligible endpoint/model, implement per-IP backoff and do not forward confidential data without policy review.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -276,6 +443,9 @@
         "https://docs.llm7.io/quickstart",
         "https://docs.llm7.io/guides/models-api"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -297,6 +467,9 @@
         "https://www.modelscope.ai/docs/model-service/API-Inference/limits",
         "https://modelscope.cn/docs/model-service/API-Inference/intro"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -317,6 +490,9 @@
       "source_urls": [
         "https://docs.api.nvidia.com/nim/docs/product"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Chat connector"
     },
@@ -338,6 +514,9 @@
         "https://docs.ollama.com/cloud",
         "https://docs.ollama.com/api/openai-compatibility"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -358,6 +537,9 @@
       "source_urls": [
         "https://docs.ovhcloud.com/en/guides/public-cloud/ai-machine-learning/ai-endpoints-getting-started"
       ],
+      "owner_account": "No account for the eligible anonymous test path; provider account for other features.",
+      "developer_action": "Select an eligible endpoint/model, implement per-IP backoff and do not forward confidential data without policy review.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -379,6 +561,9 @@
         "https://docs.siliconflow.cn/cn/usercases/use-siliconcloud-in-ccswitch",
         "https://docs.siliconflow.cn/cn/legals/terms-of-service"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -401,6 +586,9 @@
         "https://developers.openai.com/api/docs/pricing",
         "https://developers.openai.com/cookbook/examples/completions_usage_api"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Administrative keys can retrieve usage and costs by period. Keep them separate from runtime project keys. Reported cost does not by itself reveal prepaid credit balance.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Chat connector"
     },
@@ -419,6 +607,9 @@
       "source_urls": [
         "https://docs.github.com/en/github-models"
       ],
+      "owner_account": "No new setup path for the retired service.",
+      "developer_action": "Remove retired endpoints from new configurations and migration plans.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -440,6 +631,9 @@
         "https://azure.microsoft.com/en-us/pricing/details/translator/",
         "https://www.microsoft.com/en-us/translator/business/faq/"
       ],
+      "owner_account": "Microsoft/Azure identity, subscription and the appropriate service resource.",
+      "developer_action": "Use the resource-specific region and endpoint; test the chosen feature and verify its own character/audio quota.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -460,6 +654,9 @@
       "source_urls": [
         "https://azure.microsoft.com/en-us/pricing/details/speech/"
       ],
+      "owner_account": "Microsoft/Azure identity, subscription and the appropriate service resource.",
+      "developer_action": "Use the resource-specific region and endpoint; test the chosen feature and verify its own character/audio quota.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -480,6 +677,9 @@
       "source_urls": [
         "https://cloud.google.com/text-to-speech/pricing"
       ],
+      "owner_account": "Google Cloud identity with project and relevant IAM access.",
+      "developer_action": "Configure the correct credential type, restrict keys where supported, separate projects/environments and test the exact product/SKU.",
+      "monitoring_details": "Use project API metrics and relevant billing reports, with appropriate IAM. Keep SKU charges, request quota and user subscription allowances separate.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -500,6 +700,9 @@
       "source_urls": [
         "https://cloud.google.com/vision/pricing"
       ],
+      "owner_account": "Google Cloud identity with project and relevant IAM access.",
+      "developer_action": "Configure the correct credential type, restrict keys where supported, separate projects/environments and test the exact product/SKU.",
+      "monitoring_details": "Use project API metrics and relevant billing reports, with appropriate IAM. Keep SKU charges, request quota and user subscription allowances separate.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -521,6 +724,9 @@
         "https://docs.cloud.google.com/translate/docs/setup",
         "https://cloud.google.com/products/translate/pricing"
       ],
+      "owner_account": "Google Cloud identity with project and relevant IAM access.",
+      "developer_action": "Configure the correct credential type, restrict keys where supported, separate projects/environments and test the exact product/SKU.",
+      "monitoring_details": "Use project API metrics and relevant billing reports, with appropriate IAM. Keep SKU charges, request quota and user subscription allowances separate.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -542,6 +748,9 @@
         "https://ocr.space/ocrapi",
         "https://ocr.space/faq"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -563,6 +772,9 @@
         "https://elevenlabs.io/pricing",
         "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -584,6 +796,9 @@
         "https://support.deepl.com/hc/en-us/articles/360021200939-DeepL-API-plans",
         "https://developers.deepl.com/docs/resources/usage-limits"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -605,6 +820,9 @@
         "https://mymemory.translated.net/doc/usagelimits.php",
         "https://mymemory.translated.net/doc/spec.php"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -625,6 +843,9 @@
       "source_urls": [
         "https://deepgram.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -645,6 +866,9 @@
       "source_urls": [
         "https://brave.com/search/api/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -665,6 +889,9 @@
       "source_urls": [
         "https://www.tavily.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -685,6 +912,9 @@
       "source_urls": [
         "https://exa.ai/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -705,6 +935,9 @@
       "source_urls": [
         "https://www.firecrawl.dev/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -725,6 +958,9 @@
       "source_urls": [
         "https://jina.ai/reader/"
       ],
+      "owner_account": "No account for the base public path; optional identity/key can change limits.",
+      "developer_action": "Use one explicit access path; do not mix anonymous and authenticated quota assumptions.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -745,6 +981,9 @@
       "source_urls": [
         "https://serpapi.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -765,6 +1004,9 @@
       "source_urls": [
         "https://supabase.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -785,6 +1027,9 @@
       "source_urls": [
         "https://firebase.google.com/pricing"
       ],
+      "owner_account": "Google/Firebase project owner or authorized team member.",
+      "developer_action": "Install the platform SDK, configure secure rules or server permissions, register device/app details and perform a controlled feature test.",
+      "monitoring_details": "Use project API metrics and relevant billing reports, with appropriate IAM. Keep SKU charges, request quota and user subscription allowances separate.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -805,6 +1050,9 @@
       "source_urls": [
         "https://neon.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -827,6 +1075,9 @@
         "https://upstash.com/docs/redis/overall/billing",
         "https://upstash.com/blog/redis-pricing-comparison-every-major-provider-in-2026-with-numbers"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -848,6 +1099,9 @@
         "https://appwrite.io/pricing",
         "https://appwrite.io/docs/advanced/billing/free"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -868,6 +1122,9 @@
       "source_urls": [
         "https://qdrant.tech/pricing/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -888,6 +1145,9 @@
       "source_urls": [
         "https://www.pinecone.io/pricing/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -908,6 +1168,9 @@
       "source_urls": [
         "https://developers.cloudflare.com/d1/platform/pricing/"
       ],
+      "owner_account": "Cloudflare account and selected account ID.",
+      "developer_action": "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -928,6 +1191,9 @@
       "source_urls": [
         "https://turso.tech/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -948,6 +1214,9 @@
       "source_urls": [
         "https://developers.cloudflare.com/kv/platform/pricing/"
       ],
+      "owner_account": "Cloudflare account and selected account ID.",
+      "developer_action": "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -968,6 +1237,9 @@
       "source_urls": [
         "https://developers.cloudflare.com/workers/platform/pricing/"
       ],
+      "owner_account": "Cloudflare account and selected account ID.",
+      "developer_action": "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -989,6 +1261,9 @@
         "https://firebase.google.com/pricing",
         "https://firebase.google.com/docs/auth/web/google-signin"
       ],
+      "owner_account": "Google/Firebase project owner or authorized team member.",
+      "developer_action": "Install the platform SDK, configure secure rules or server permissions, register device/app details and perform a controlled feature test.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1009,6 +1284,9 @@
       "source_urls": [
         "https://clerk.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1029,6 +1307,9 @@
       "source_urls": [
         "https://auth0.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1050,6 +1331,9 @@
         "https://developers.cloudflare.com/turnstile/plans/",
         "https://developers.cloudflare.com/turnstile/get-started/"
       ],
+      "owner_account": "Cloudflare account and registered website/widget.",
+      "developer_action": "Render the widget and verify tokens server-side with expiry and failure handling.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1071,6 +1355,9 @@
         "https://haveibeenpwned.com/API/V3",
         "https://haveibeenpwned.com/API/v3"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1091,6 +1378,9 @@
       "source_urls": [
         "https://resend.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1111,6 +1401,9 @@
       "source_urls": [
         "https://www.mailjet.com/pricing/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1133,6 +1426,9 @@
         "https://firebase.google.com/docs/cloud-messaging",
         "https://firebase.google.com/docs/cloud-messaging/send/v1-api"
       ],
+      "owner_account": "Google/Firebase project owner or authorized team member.",
+      "developer_action": "Install the platform SDK, configure secure rules or server permissions, register device/app details and perform a controlled feature test.",
+      "monitoring_details": "Record sends and provider message IDs. API acceptance does not prove device display. No universal cash balance is implied by message counts.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1153,6 +1449,9 @@
       "source_urls": [
         "https://core.telegram.org/bots/faq"
       ],
+      "owner_account": "Telegram account used by the owner to create a bot.",
+      "developer_action": "Protect the token, validate webhooks, record chat authorization and respect message/broadcast limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1174,6 +1473,9 @@
         "https://docs.discord.com/developers/resources/webhook",
         "https://docs.discord.com/developers/topics/rate-limits"
       ],
+      "owner_account": "Discord account with permission to configure the destination server/channel.",
+      "developer_action": "Keep webhook URLs server-side, validate payloads and implement retry-after/backoff.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1194,6 +1496,9 @@
       "source_urls": [
         "https://pusher.com/channels/pricing/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1214,6 +1519,9 @@
       "source_urls": [
         "https://ably.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1234,6 +1542,9 @@
       "source_urls": [
         "https://onesignal.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1255,6 +1566,9 @@
         "https://www.brevo.com/features/email-api/",
         "https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1275,6 +1589,9 @@
       "source_urls": [
         "https://www.daily.co/pricing/video-sdk/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1295,6 +1612,9 @@
       "source_urls": [
         "https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1315,6 +1635,9 @@
       "source_urls": [
         "https://developers.cloudflare.com/r2/pricing/"
       ],
+      "owner_account": "Cloudflare account and selected account ID.",
+      "developer_action": "Use the matching binding/REST/S3 protocol, restrict permissions, apply retention/caching rules and verify one operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1335,6 +1658,9 @@
       "source_urls": [
         "https://firebase.google.com/docs/storage/faqs-storage-changes-announced-sept-2024"
       ],
+      "owner_account": "Google/Firebase project owner or authorized team member.",
+      "developer_action": "Install the platform SDK, configure secure rules or server permissions, register device/app details and perform a controlled feature test.",
+      "monitoring_details": "Use project API metrics and relevant billing reports, with appropriate IAM. Keep SKU charges, request quota and user subscription allowances separate.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1355,6 +1681,9 @@
       "source_urls": [
         "https://cloudinary.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1375,6 +1704,9 @@
       "source_urls": [
         "https://imagekit.io/plans/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1395,6 +1727,9 @@
       "source_urls": [
         "https://unsplash.com/documentation"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1415,6 +1750,9 @@
       "source_urls": [
         "https://pixabay.com/api/docs/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1435,6 +1773,9 @@
       "source_urls": [
         "https://docs.openverse.org/api/reference/authentication_and_throttling.html"
       ],
+      "owner_account": "No account for the base public path; optional identity/key can change limits.",
+      "developer_action": "Use one explicit access path; do not mix anonymous and authenticated quota assumptions.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1457,6 +1798,9 @@
         "https://www.pexels.com/onboarding/",
         "https://www.pexels.com/api/documentation/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1477,6 +1821,9 @@
       "source_urls": [
         "https://www.geoapify.com/pricing/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1497,6 +1844,9 @@
       "source_urls": [
         "https://locationiq.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1517,6 +1867,9 @@
       "source_urls": [
         "https://operations.osmfoundation.org/policies/nominatim/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1537,6 +1890,9 @@
       "source_urls": [
         "https://docs.tomtom.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1558,6 +1914,9 @@
         "https://developers.google.com/maps/billing-and-pricing/pricing",
         "https://mapsplatform.google.com/pricing/"
       ],
+      "owner_account": "Google Cloud identity with project and relevant IAM access.",
+      "developer_action": "Configure the correct credential type, restrict keys where supported, separate projects/environments and test the exact product/SKU.",
+      "monitoring_details": "Use project API metrics and relevant billing reports, with appropriate IAM. Keep SKU charges, request quota and user subscription allowances separate.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1578,6 +1937,9 @@
       "source_urls": [
         "https://www.mapbox.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1598,6 +1960,9 @@
       "source_urls": [
         "https://www.geonames.org/export/web-services.html"
       ],
+      "owner_account": "Provider account and publicly supplied web-service username.",
+      "developer_action": "Pass the correct username, cache results and monitor the shared account credit limit.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1618,6 +1983,9 @@
       "source_urls": [
         "https://ipinfo.io/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1640,6 +2008,9 @@
         "https://restcountries.com/docs/countries/api-versions",
         "https://restcountries.com/docs/countries"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1660,6 +2031,9 @@
       "source_urls": [
         "https://www.ipify.org/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1680,6 +2054,9 @@
       "source_urls": [
         "https://opencagedata.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1700,6 +2077,9 @@
       "source_urls": [
         "https://open-meteo.com/en/pricing"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1720,6 +2100,9 @@
       "source_urls": [
         "https://openweathermap.org/price"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1741,6 +2124,9 @@
         "https://www.weatherapi.com/",
         "https://www.weatherapi.com/pricing.aspx"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1761,6 +2147,9 @@
       "source_urls": [
         "https://docs.openaq.org/using-the-api/api-key"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1781,6 +2170,9 @@
       "source_urls": [
         "https://support.tomorrow.io/hc/en-us/articles/20273728362644-Free-API-Plan-Rate-Limits"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1801,6 +2193,9 @@
       "source_urls": [
         "https://frankfurter.dev/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1821,6 +2216,9 @@
       "source_urls": [
         "https://www.exchangerate-api.com/docs/free"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1841,6 +2239,9 @@
       "source_urls": [
         "https://www.coingecko.com/en/api/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1861,6 +2262,9 @@
       "source_urls": [
         "https://www.alphavantage.co/support/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1881,6 +2285,9 @@
       "source_urls": [
         "https://twelvedata.com/pricing"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1901,6 +2308,9 @@
       "source_urls": [
         "https://docs.stripe.com/sandboxes"
       ],
+      "owner_account": "Payment-provider developer account; separate production onboarding later.",
+      "developer_action": "Keep test/live keys and webhooks separate; use synthetic test data, not real payment details.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1921,6 +2331,9 @@
       "source_urls": [
         "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
       ],
+      "owner_account": "No account for the base public path; optional identity/key can change limits.",
+      "developer_action": "Use one explicit access path; do not mix anonymous and authenticated quota assumptions.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1942,6 +2355,9 @@
         "https://developers.google.com/workspace/sheets/api/quickstart/python",
         "https://developers.google.com/workspace/sheets/api/limits"
       ],
+      "owner_account": "Cloud project owner plus the Google user who owns the private data.",
+      "developer_action": "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1962,6 +2378,9 @@
       "source_urls": [
         "https://developers.google.com/workspace/docs/api/limits"
       ],
+      "owner_account": "Cloud project owner plus the Google user who owns the private data.",
+      "developer_action": "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -1982,6 +2401,9 @@
       "source_urls": [
         "https://developers.google.com/workspace/drive/api/guides/limits"
       ],
+      "owner_account": "Cloud project owner plus the Google user who owns the private data.",
+      "developer_action": "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2002,6 +2424,9 @@
       "source_urls": [
         "https://developers.google.com/workspace/calendar/api/guides/quota"
       ],
+      "owner_account": "Cloud project owner plus the Google user who owns the private data.",
+      "developer_action": "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2023,6 +2448,9 @@
         "https://developers.google.com/workspace/gmail/api/quickstart/python",
         "https://developers.google.com/workspace/gmail/api/reference/quota"
       ],
+      "owner_account": "Cloud project owner plus the Google user who owns the private data.",
+      "developer_action": "Implement OAuth redirects/state/PKCE as appropriate, least-privilege scopes, secure token storage, revocation and consent error handling.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2044,6 +2472,9 @@
         "https://developers.google.com/youtube/v3/getting-started",
         "https://developers.google.com/youtube/v3/guides/quota_and_compliance_audits"
       ],
+      "owner_account": "Google Cloud project for configured access; a data-owner account for private/write operations.",
+      "developer_action": "Keep public reads separate from private writes, use minimal scopes and account for method-specific quota costs.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2064,6 +2495,9 @@
       "source_urls": [
         "https://developers.google.com/books/docs/v1/using"
       ],
+      "owner_account": "Google Cloud project for configured access; a data-owner account for private/write operations.",
+      "developer_action": "Keep public reads separate from private writes, use minimal scopes and account for method-specific quota costs.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2084,6 +2518,9 @@
       "source_urls": [
         "https://jsonplaceholder.typicode.com/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2105,6 +2542,9 @@
         "https://dummyjson.com/docs",
         "https://dummyjson.com/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2125,6 +2565,9 @@
       "source_urls": [
         "https://randomuser.me/documentation"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2145,6 +2588,9 @@
       "source_urls": [
         "https://httpbin.org/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2165,6 +2611,9 @@
       "source_urls": [
         "https://pokeapi.co/docs/v2"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2185,6 +2634,9 @@
       "source_urls": [
         "https://opentdb.com/api_config.php"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2205,6 +2657,9 @@
       "source_urls": [
         "https://dictionaryapi.dev/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2225,6 +2680,9 @@
       "source_urls": [
         "https://www.datamuse.com/api/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2245,6 +2703,9 @@
       "source_urls": [
         "https://www.crossref.org/documentation/retrieve-metadata/rest-api/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2267,6 +2728,9 @@
         "https://help.openalex.org/api/authentication/",
         "https://help.openalex.org/access/pricing/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2288,6 +2752,9 @@
         "https://api.nasa.gov/",
         "https://api.nasa.gov/assets/html/authentication.html"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2308,6 +2775,9 @@
       "source_urls": [
         "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2328,6 +2798,9 @@
       "source_urls": [
         "https://openlibrary.org/developers/api"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2348,6 +2821,9 @@
       "source_urls": [
         "https://earthquake.usgs.gov/fdsnws/event/1/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2368,6 +2844,9 @@
       "source_urls": [
         "https://fdc.nal.usda.gov/api-guide/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2388,6 +2867,9 @@
       "source_urls": [
         "https://vpic.nhtsa.dot.gov/api/"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2408,6 +2890,9 @@
       "source_urls": [
         "https://developer.themoviedb.org/docs/faq"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2428,6 +2913,9 @@
       "source_urls": [
         "https://www.tvmaze.com/api"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2449,6 +2937,9 @@
         "https://www.football-data.org/pricing",
         "https://www.football-data.org/"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2469,6 +2960,9 @@
       "source_urls": [
         "https://openfoodfacts.github.io/openfoodfacts-server/api/"
       ],
+      "owner_account": "Public reads may be available without an account; submissions can require contributor authentication.",
+      "developer_action": "Separate read/write endpoints, identify the application, honor limits and preserve attribution/license obligations.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2489,6 +2983,9 @@
       "source_urls": [
         "https://currentsapi.services/en"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2510,6 +3007,9 @@
         "https://newsapi.org/pricing",
         "https://newsapi.org/terms"
       ],
+      "owner_account": "Separate provider account or organization; a developer key/resource belongs to that account.",
+      "developer_action": "Configure the exact endpoint/SDK, protect server credentials, enforce the chosen scope/plan, then test one small operation.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2530,6 +3030,9 @@
       "source_urls": [
         "https://aladhan.com/prayer-times-api"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2550,6 +3053,9 @@
       "source_urls": [
         "https://alquran.cloud/api"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2570,6 +3076,9 @@
       "source_urls": [
         "https://www.mp3quran.net/ar/api"
       ],
+      "owner_account": "No provider account for the described public read endpoint.",
+      "developer_action": "Implement the public request, validation, timeouts, caching, attribution and policy-specific rate limits.",
+      "monitoring_details": "Record the product-specific unit and account scope. A public usage/balance API has not been established for this entry; consult its dashboard or documented reporting endpoint.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2590,6 +3099,9 @@
       "source_urls": [
         "https://docs.ollama.com/api/introduction"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2610,6 +3122,9 @@
       "source_urls": [
         "https://docs.libretranslate.com/"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2630,6 +3145,9 @@
       "source_urls": [
         "https://pocketbase.io/docs/"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2650,6 +3168,9 @@
       "source_urls": [
         "https://localai.io/"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2670,6 +3191,9 @@
       "source_urls": [
         "https://raw.githubusercontent.com/ggml-org/whisper.cpp/master/examples/server/README.md"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2690,6 +3214,9 @@
       "source_urls": [
         "https://github.com/remsky/Kokoro-FastAPI"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2710,6 +3237,9 @@
       "source_urls": [
         "https://github.com/Comfy-Org/ComfyUI"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2730,6 +3260,9 @@
       "source_urls": [
         "https://qdrant.tech/documentation/quickstart/"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2750,6 +3283,9 @@
       "source_urls": [
         "https://docs.trychroma.com/docs/overview/introduction"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2770,6 +3306,9 @@
       "source_urls": [
         "https://www.meilisearch.com/docs/resources/self_hosting/getting_started/quick_start"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2790,6 +3329,9 @@
       "source_urls": [
         "https://typesense.org/docs/"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     },
@@ -2810,6 +3352,9 @@
       "source_urls": [
         "https://www.keycloak.org/"
       ],
+      "owner_account": "No hosted-provider account inherently required for local software; a model registry or identity source may have its own login.",
+      "developer_action": "Install a versioned release, bind privately, configure authentication/TLS, provision storage/models and verify a local health check.",
+      "monitoring_details": "Measure requests, latency, CPU/GPU, RAM, disk and optional model tokens. Local software has no provider-funded balance unless you connect another service.",
       "last_consolidated_on": "2026-10-15",
       "nexus_mode": "Integration guide"
     }

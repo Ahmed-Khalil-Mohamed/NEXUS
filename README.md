@@ -2,11 +2,17 @@
 
 Bring conversations, projects, specialist teams and connected tools into one desktop app.
 
-**Version 0.6.13 · Windows x64 · English & Arabic · Light & dark themes**
+**Version 0.6.19 · Windows x64 · English & Arabic · Light & dark themes**
 
-[Download installer](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.6.13/NEXUS-Setup-0.6.13.exe) · [Portable EXE](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.6.13/NEXUS-0.6.13-Windows.exe) · [What's new](docs/RELEASE-0.6.13.md) · [User guide](docs/USER-GUIDE.md)
+[Download installer](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.6.19/NEXUS-Setup-0.6.19.exe) · [Portable EXE](https://github.com/Ahmed-Khalil-Mohamed/NEXUS/releases/download/v0.6.19/NEXUS-0.6.19-Windows.exe) · [What's new](docs/RELEASE-0.6.19.md) · [User guide](docs/USER-GUIDE.md)
 
-![NEXUS Home](assets/v0.6.13/home-light.jpg)
+![NEXUS Home](assets/v0.6.19/home-dark.jpg)
+
+## New in 0.6.19
+
+Pooled local GPU inference, improved project execution and tool evidence, clearer specialist selection and a revised first-run experience. [Read all changes](docs/RELEASE-0.6.19.md) · [Pooled setup](docs/POOLED-GUIDE.md) · [Screenshot gallery](docs/GALLERY.md).
+
+![Pooled local GPU setup](assets/v0.6.19/pooled-local.jpg)
 
 ## One workspace, more possibilities
 
@@ -22,7 +28,7 @@ Bring conversations, projects, specialist teams and connected tools into one des
 
 Your conversations have their own history, composer and agent/model selection. The execution panel separates **Workflow**, **Activity** and **Files**. Select a Mix stage to inspect its assignment, instructions and available output.
 
-![Chat Studio and Mix workflow](assets/v0.6.13/chat-mix.jpg)
+![Chat Studio and Mix workflow](assets/v0.6.19/chat-mix.jpg)
 
 The library includes **300 editable specialist roles**. These are instructions executed through your configured providers, not 300 bundled models. NEXUS Manager coordinates work, and eligible providers can be routed by capability. Work runs in scheduled batches, subject to concurrency settings and provider limits.
 
@@ -30,7 +36,7 @@ The library includes **300 editable specialist roles**. These are instructions e
 
 Browse Discover, Workspace tools, Skills, MCP connections, Local models and Your library. Review a skill before installing it into a supported agent's location. Explore public compatible GGUF models from Hugging Face and run supported downloads through Ollama.
 
-![NEXUS Store](assets/v0.6.13/store-light.jpg)
+![NEXUS Store](assets/v0.6.19/store.jpg)
 
 ## API connections — setup with context
 
@@ -40,11 +46,11 @@ Browse Discover, Workspace tools, Skills, MCP connections, Local models and Your
 - **9 explicit catalog-to-chat mappings**; remaining profiles are integration guides, not automatically callable chat tools.
 - Search saved connections, edit without creating duplicates, and inspect session-specific connection feedback.
 
-![API connection workspace](assets/v0.6.13/api-light.jpg)
+![API connection workspace](assets/v0.6.19/api-connections.jpg)
 
 [Full 138-service catalog](docs/API-CATALOG.md) · [API setup and provider presets](docs/API-GUIDE.md) · [Google account setup](docs/GOOGLE-API-SETUP.md) · [Catalog JSON](docs/api-catalog.json)
 
-![Advanced API workspace](assets/v0.6.13/advanced-light.jpg)
+![Advanced API workspace](assets/v0.6.19/advanced-api.jpg)
 
 The research snapshot is dated **15 October 2026**. It is not a live price, quota or account-eligibility feed. Google sign-in needs an app-specific Desktop OAuth Client ID; it does not activate third-party APIs or replace their authorization requirements.
 
@@ -58,9 +64,9 @@ Manage saved servers separately from their configuration. Search servers and dis
 
 A clearer settings navigation, visual theme previews, profile settings and language controls. Chat preferences include goals, response detail, tone, instructions, suggestions and tool access.
 
-![NEXUS Settings](assets/v0.6.13/settings-light.jpg)
+![NEXUS Settings](assets/v0.6.19/settings.jpg)
 
-![Advanced API in dark mode](assets/v0.6.13/advanced-dark.jpg)
+![Advanced API in dark mode](assets/v0.6.19/advanced-api.jpg)
 
 *Actual interface screenshots using an isolated demonstration workspace. Conversation results and activity are demo data; no paid AI request was made for these screenshots.*
 
@@ -77,9 +83,9 @@ Both editions use `%APPDATA%/NEXUS/workspace`. Windows x64 is required. Executab
 
 - Discovery does not guarantee that every detected application supports programmatic execution.
 - Reported tokens, model identity and tool activity depend on the provider; unavailable values remain unknown.
-- Project Lab reads bounded context. Proposed changes require Apply and conflict checks; generated code and dependencies are not automatically executed or installed.
+- Project Lab reads bounded context. File delivery follows the project execution settings and conflict checks; review actual changed files and check results. Generated dependencies are not automatically installed.
 - Voice requires a configured local transcription service. Video import uses three sampled frames.
-- Local downloads require compatible hardware, model licenses and a supported Ollama runtime. Gated/private/split model downloads are not supported by this flow.
+- Hugging Face GGUF downloads use Ollama; Pooled downloads use the bundled Pooled runtime. Both require compatible hardware and model licenses. Gated/private/split model downloads are not supported by this flow.
 - MCP OAuth is not supported in this build. Review each tool's permissions and data handling.
 
 ## Documentation & support

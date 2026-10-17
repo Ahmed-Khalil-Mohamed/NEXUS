@@ -1,6 +1,6 @@
 # API & Advanced API guide
 
-NEXUS 0.6.13 separates **chat connections** from **API research and activation guidance**. An API catalog entry does not become an executable tool simply by being listed.
+NEXUS 0.6.19 separates **chat connections** from **API research and activation guidance**. An API catalog entry does not become an executable tool simply by being listed.
 
 ## Connect a chat provider
 
@@ -58,4 +58,11 @@ API keys and supported MCP bearer credentials use the Windows user-scoped DPAPI 
 
 Activity reports use provider-reported usage where available; unknown token counts stay unknown. NEXUS's model price comparisons are estimates from dated snapshots, not invoices or live billing controls.
 
-[MCP guide](MCP-GUIDE.md) · [Privacy](PRIVACY.md) · [Release notes](RELEASE-0.6.13.md)
+[MCP guide](MCP-GUIDE.md) · [Privacy](PRIVACY.md) · [Release notes](RELEASE-0.6.19.md)
+
+
+## Using the full catalog in a project
+
+[Detailed activation reference](API-ACTIVATION.md) lists every included service with its purpose, official setup page, credential type, checklist and caveats. For a chat-capable preset, create and test a connection. For other APIs, provide the agent with the official documentation and authorized project context, then implement the integration in your project or connect an appropriate MCP tool. Catalog membership alone does not give the agent live access.
+
+[Pooled local inference](POOLED-GUIDE.md) is also available without a hosted chat-provider subscription; weights, hardware and upstream network requirements still apply.
