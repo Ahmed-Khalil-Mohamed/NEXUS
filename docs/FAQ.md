@@ -42,7 +42,7 @@ It needs microphone access and a configured local transcription service, which N
 
 ## Does it execute generated code automatically?
 
-No. File changes require Apply, conflict checks, and backups. NEXUS does not automatically run generated code, delete project files, or install dependencies.
+Generated code is not automatically executed or installed. File delivery can be automatic or require review, according to chat preferences; conflict checks and backups apply to either mode. The file-delivery protocol does not delete project files.
 
 ## Why does Windows show an unknown publisher?
 

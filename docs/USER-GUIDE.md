@@ -26,7 +26,7 @@ Compare with SHA256SUMS.txt from the same release. A matching hash confirms the 
 | LM Studio | Load a model, start its local API server, and configure it in Settings. |
 | Custom local connector | Configure a supported local OpenAI-compatible service or CLI protocol and test it. |
 
-Use **Settings → Tools & discovery** to manage providers and run connection checks. Checks send real short requests and can consume provider usage. Custom CLI tools run with your Windows permissions: configure trusted executables.
+Use **Settings → Agents & discovery** to manage providers and run connection checks. Checks send real short requests and can consume provider usage. Custom CLI tools run with your Windows permissions: configure trusted executables.
 
 Detection, enablement, and readiness are separate. An arbitrary graphical app cannot execute work merely because its EXE is detected. In 0.6.19, Settings > API also supports compatible remote API connections with your own endpoint, model and credentials. Select a compatible protocol; a company preset does not guarantee every model supports chat or tools. Saved API keys use Windows user-scoped DPAPI protection.
 
@@ -64,7 +64,7 @@ Select a folder or enter its path. Inspect the indexed files and suggested speci
 
 The reader processes up to **200 text files**, **500 KB total**, **100 KB per file**, and **12 levels** deep. It skips common secret filenames, binaries, dependency directories, and links. Sensitive values inside normal source files can still be included: inspect your context.
 
-Generated changes appear in the report. **Apply** checks original file hashes, refuses conflicts, and saves backups before writing. Refresh the index after outside changes. Deletion is not supported by the apply protocol. Generated output is bounded to 30 files and 2 MB.
+Generated changes appear in the report. Chat execution preferences support automatic delivery or review before applying. Both paths check original file hashes, refuse conflicts, and save backups before writing. Refresh the index after outside changes. Deletion is not supported by the apply protocol. Generated output is bounded to 30 files and 2 MB.
 
 ## Mix and the specialist library
 
@@ -105,7 +105,7 @@ AI review does not replace tests or a security audit. NEXUS does not automatical
 
 ## Settings and updates
 
-General contains your profile, language, theme, context allowance, and audio endpoint. Tools & discovery manages connections. Team & coordination controls execution preferences.
+General contains your profile, language and theme; Memory & voice contains runtime and voice preferences. Agents & discovery manages connections. Team & coordination controls execution preferences.
 
 Back up `%APPDATA%/NEXUS/workspace` while NEXUS is closed before updating or changing machines. It contains private data and is not encrypted by NEXUS. Never attach it to public reports.
 
@@ -115,3 +115,8 @@ Download updates from Releases and close NEXUS before installing. No automatic u
 ## New workspace navigation
 
 Home contains Overview, Activity, AI briefing and Model explorer. Chat has a top agent/model picker and Workflow, Activity and Files views. Store separates six browsing sections; Settings separates eight configuration areas. See the [full update](RELEASE-0.6.19.md), [API guide](API-GUIDE.md), [138-service catalog](API-CATALOG.md), [Google setup](GOOGLE-API-SETUP.md) and [MCP guide](MCP-GUIDE.md).
+
+
+## Pooled local GPU runtime
+
+Open Store ? Local models ? Pooled to download and start a supported model, then choose Use in chat / Mix. [Full Pooled guide](POOLED-GUIDE.md). Model weights are separate downloads. Small models can ignore tool instructions; verify output.
